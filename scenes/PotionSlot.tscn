@@ -1,0 +1,123 @@
+[gd_scene load_steps=9 format=3 uid="uid://3x5ew4g07amb"]
+
+[ext_resource type="FontFile" uid="uid://erouq5hqnn5p" path="res://assets/fonts/munro.ttf" id="1_pdk4r"]
+[ext_resource type="Script" path="res://src/components/Tooltip.gd" id="2_obfr8"]
+[ext_resource type="Texture2D" uid="uid://e3tu2tsq68kh" path="res://assets/potion.png" id="2_wa263"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p6pid"]
+bg_color = Color(0.101961, 0.109804, 0.172549, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.407843, 0.211765, 0.407843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7bvyi"]
+bg_color = Color(0.407843, 0.211765, 0.407843, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_color = Color(0.407843, 0.211765, 0.407843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xqseo"]
+bg_color = Color(0.407843, 0.211765, 0.407843, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.407843, 0.211765, 0.407843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qqnb0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dn6v8"]
+bg_color = Color(0.101961, 0.109804, 0.172549, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.407843, 0.211765, 0.407843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Button" type="Button"]
+custom_minimum_size = Vector2(68, 68)
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.407843, 0.211765, 0.407843, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.109804, 0.172549, 1)
+theme_override_colors/font_focus_color = Color(0.407843, 0.211765, 0.407843, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("1_pdk4r")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_p6pid")
+theme_override_styles/hover = SubResource("StyleBoxFlat_7bvyi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_xqseo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qqnb0")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer"]
+layout_mode = 2
+texture = ExtResource("2_wa263")
+expand_mode = 1
+
+[node name="Tooltip" type="MarginContainer" parent="."]
+visible = false
+top_level = true
+z_index = 1000
+z_as_relative = false
+layout_mode = 0
+offset_right = 171.0
+offset_bottom = 66.0
+
+[node name="Panel" type="Panel" parent="Tooltip"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dn6v8")
+
+[node name="MarginContainer" type="MarginContainer" parent="Tooltip"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Tooltip/MarginContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Tooltip/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_pdk4r")
+theme_override_font_sizes/font_size = 24
+text = "asdasdsad"
+
+[node name="Description" type="Label" parent="Tooltip/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_pdk4r")
+text = "asdasdadasdasdasd"
+
+[node name="TooltipManager" type="Node" parent="."]
+script = ExtResource("2_obfr8")
+disable = true

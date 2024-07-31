@@ -1,0 +1,108 @@
+[gd_scene load_steps=13 format=3 uid="uid://voiidwxjgrll"]
+
+[ext_resource type="Shader" path="res://src/shaders/dither.gdshader" id="1_6d38w"]
+[ext_resource type="Script" path="res://src/Menu.gd" id="1_kdt02"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="1_llftu"]
+[ext_resource type="Texture2D" uid="uid://dk0fap6lag1u2" path="res://assets/bg.png" id="2_7eidq"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="2_a1sdx"]
+[ext_resource type="Texture2D" uid="uid://cp0ok14rv0p6u" path="res://assets/palettes/sweetie-16.png" id="2_qo4gl"]
+[ext_resource type="Texture2D" uid="uid://ca3kqehgd817y" path="res://assets/title.png" id="3_4kubl"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="3_b44x7"]
+[ext_resource type="FontFile" uid="uid://erouq5hqnn5p" path="res://assets/fonts/munro.ttf" id="5_3pd8k"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7trck"]
+shader = ExtResource("1_6d38w")
+shader_parameter/dither_pixel_size = 0.8
+shader_parameter/dither_pixel_offset = Vector2(0, 0)
+shader_parameter/albedo = Color(1, 1, 1, 1)
+shader_parameter/albedo_strength = 1.0
+shader_parameter/alpha_dither_pixel_offset = Vector2(0, 0)
+shader_parameter/dither_palette = ExtResource("2_qo4gl")
+
+[sub_resource type="Resource" id="Resource_e5rar"]
+script = ExtResource("3_b44x7")
+duration = 1.0
+transition = 0
+ease = 2
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f782o"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_kdt02")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_7trck")
+position = Vector2(562, 325)
+scale = Vector2(2.08326, 2.08326)
+texture = ExtResource("2_7eidq")
+
+[node name="Followed" type="Node2D" parent="."]
+position = Vector2(568, 328)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(568, 328)
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D"]
+script = ExtResource("1_llftu")
+
+[node name="PhantomCamera2D" type="Node2D" parent="." node_paths=PackedStringArray("follow_target")]
+position = Vector2(568, 328)
+script = ExtResource("2_a1sdx")
+follow_mode = 2
+follow_target = NodePath("../Followed")
+snap_to_pixel = true
+tween_resource = SubResource("Resource_e5rar")
+tween_on_load = false
+draw_limits = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_f782o")
+position = Vector2(707.201, 230.551)
+scale = Vector2(0.399168, 0.399168)
+texture = ExtResource("3_4kubl")
+
+[node name="NewGameC" type="Node2D" parent="."]
+position = Vector2(536.201, 474.551)
+
+[node name="NewGame" type="Label" parent="NewGameC"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.0
+offset_top = -16.0
+offset_right = 79.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("5_3pd8k")
+theme_override_font_sizes/font_size = 32
+text = "New Game"
+metadata/_edit_use_anchors_ = true
+
+[node name="ContinueC" type="Node2D" parent="."]
+position = Vector2(539.201, 528.551)
+
+[node name="Continue" type="Label" parent="ContinueC"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -16.0
+offset_right = 64.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("5_3pd8k")
+theme_override_font_sizes/font_size = 32
+text = "Continue"
+metadata/_edit_use_anchors_ = true

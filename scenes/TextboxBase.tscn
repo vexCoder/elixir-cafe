@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://cd32n21h1itvj"]
+
+[ext_resource type="Texture2D" uid="uid://bnxfqq3qfn0o" path="res://assets/textbox.png" id="1_5x50y"]
+[ext_resource type="FontFile" uid="uid://erouq5hqnn5p" path="res://assets/fonts/munro.ttf" id="2_516kp"]
+
+[node name="TextboxBase" type="MarginContainer"]
+offset_right = 500.0
+offset_bottom = 84.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_5x50y")
+region_rect = Rect2(0, 0, 48, 48)
+patch_margin_left = 16
+patch_margin_top = 16
+patch_margin_right = 16
+patch_margin_bottom = 16
+
+[node name="LabelContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 32
+
+[node name="Label" type="Label" parent="LabelContainer"]
+custom_minimum_size = Vector2(350, 24)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_516kp")
+theme_override_font_sizes/font_size = 20
+vertical_alignment = 1
+autowrap_mode = 2

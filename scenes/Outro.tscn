@@ -1,0 +1,134 @@
+[gd_scene load_steps=19 format=3 uid="uid://0hwpbxf5wuul"]
+
+[ext_resource type="Texture2D" uid="uid://u0nepwklbdpa" path="res://assets/outro/triangle apollo dead.png" id="1_55ire"]
+[ext_resource type="Script" path="res://src/Outro.gd" id="1_aj5na"]
+[ext_resource type="Texture2D" uid="uid://cdaiehu3255hs" path="res://assets/outro/triangle apollo live.png" id="2_bi45p"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="3_1lohd"]
+[ext_resource type="Texture2D" uid="uid://cur1hfdsjf31m" path="res://assets/outro/triangle buttercup dead.png" id="3_oh5cc"]
+[ext_resource type="Texture2D" uid="uid://c64323yb2r4b" path="res://assets/outro/triangle buttercup live.png" id="4_1m5qs"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="4_ohmnx"]
+[ext_resource type="Texture2D" uid="uid://4hc2u4qf62vr" path="res://assets/outro/triangle carsen dead.png" id="5_jckon"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="5_woyql"]
+[ext_resource type="Texture2D" uid="uid://bgbq12oj3xuvv" path="res://assets/outro/triangle carsen live.png" id="6_wgx4f"]
+[ext_resource type="Texture2D" uid="uid://pv5sa36wa6xk" path="res://assets/outro/triangle vel dead.png" id="7_c2n1u"]
+[ext_resource type="Texture2D" uid="uid://dpr418uqw1h5v" path="res://assets/outro/triangle vel live.png" id="8_hu7sm"]
+[ext_resource type="Texture2D" uid="uid://ct5ud4iyudh2h" path="res://assets/outro/triangle westley dead.png" id="9_ust7e"]
+[ext_resource type="Texture2D" uid="uid://bawn7w30mt14h" path="res://assets/outro/triangle westley live.png" id="10_pdoyt"]
+[ext_resource type="Texture2D" uid="uid://drrbxk0v7qjf7" path="res://assets/outro/evil heroes mc.png" id="11_21rjq"]
+[ext_resource type="Texture2D" uid="uid://clb5mtd3ciik4" path="res://assets/outro/win.png" id="12_drylw"]
+[ext_resource type="Texture2D" uid="uid://bhxixe8mj81sw" path="res://assets/outro/game-over.png" id="13_gostp"]
+
+[sub_resource type="Resource" id="Resource_cl7sx"]
+script = ExtResource("5_woyql")
+duration = 1.0
+transition = 0
+ease = 2
+
+[node name="Outro" type="Node2D"]
+script = ExtResource("1_aj5na")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -41.0
+offset_right = -1.0
+offset_bottom = 40.0
+scale = Vector2(30.2089, 16.3546)
+color = Color(0, 0, 0, 1)
+
+[node name="Heroes" type="Node2D" parent="."]
+position = Vector2(-205, -2)
+scale = Vector2(1.43244, 1.43244)
+
+[node name="Apollo" type="Node2D" parent="Heroes"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(532, 235)
+scale = Vector2(0.375525, 0.375525)
+
+[node name="2" type="Sprite2D" parent="Heroes/Apollo"]
+texture = ExtResource("1_55ire")
+
+[node name="1" type="Sprite2D" parent="Heroes/Apollo"]
+texture = ExtResource("2_bi45p")
+
+[node name="Buttercup" type="Node2D" parent="Heroes"]
+visible = false
+position = Vector2(532, 235)
+scale = Vector2(0.375525, 0.375525)
+
+[node name="2" type="Sprite2D" parent="Heroes/Buttercup"]
+texture = ExtResource("3_oh5cc")
+
+[node name="1" type="Sprite2D" parent="Heroes/Buttercup"]
+texture = ExtResource("4_1m5qs")
+
+[node name="Carsen" type="Node2D" parent="Heroes"]
+visible = false
+position = Vector2(532, 235)
+scale = Vector2(0.375525, 0.375525)
+
+[node name="2" type="Sprite2D" parent="Heroes/Carsen"]
+texture = ExtResource("5_jckon")
+
+[node name="1" type="Sprite2D" parent="Heroes/Carsen"]
+texture = ExtResource("6_wgx4f")
+
+[node name="Vel" type="Node2D" parent="Heroes"]
+visible = false
+position = Vector2(532, 235)
+scale = Vector2(0.375525, 0.375525)
+
+[node name="2" type="Sprite2D" parent="Heroes/Vel"]
+texture = ExtResource("7_c2n1u")
+
+[node name="1" type="Sprite2D" parent="Heroes/Vel"]
+texture = ExtResource("8_hu7sm")
+
+[node name="Westley" type="Node2D" parent="Heroes"]
+visible = false
+position = Vector2(532, 235)
+scale = Vector2(0.375525, 0.375525)
+
+[node name="2" type="Sprite2D" parent="Heroes/Westley"]
+texture = ExtResource("9_ust7e")
+
+[node name="1" type="Sprite2D" parent="Heroes/Westley"]
+texture = ExtResource("10_pdoyt")
+
+[node name="MC" type="Sprite2D" parent="Heroes"]
+visible = false
+position = Vector2(535, 233)
+scale = Vector2(0.376, 0.376)
+texture = ExtResource("11_21rjq")
+
+[node name="Win" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(579, 327)
+scale = Vector2(0.635515, 0.635515)
+texture = ExtResource("12_drylw")
+
+[node name="GameOver" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(579, 327)
+scale = Vector2(0.635515, 0.635515)
+texture = ExtResource("13_gostp")
+
+[node name="Followed" type="Node2D" parent="."]
+position = Vector2(568, 328)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(568, 328)
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D"]
+script = ExtResource("3_1lohd")
+
+[node name="PhantomCamera2D" type="Node2D" parent="." node_paths=PackedStringArray("follow_target")]
+position = Vector2(568, 328)
+script = ExtResource("4_ohmnx")
+follow_mode = 2
+follow_target = NodePath("../Followed")
+snap_to_pixel = true
+tween_resource = SubResource("Resource_cl7sx")
+tween_on_load = false
+draw_limits = true

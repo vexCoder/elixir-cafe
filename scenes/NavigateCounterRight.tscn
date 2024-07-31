@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcmhp6q0fxd1y"]
+
+[ext_resource type="Script" path="res://src/components/Navigate.gd" id="1_p8oyb"]
+[ext_resource type="Script" path="res://src/components/Hoverable.gd" id="2_f1vl4"]
+[ext_resource type="Texture2D" uid="uid://di460bk2vvoal" path="res://assets/navigation-box-counter-right.png" id="5_r2p8b"]
+
+[node name="NavigateCounterRight" type="Control"]
+layout_mode = 3
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1152.0
+offset_top = -324.0
+offset_right = -777.0
+offset_bottom = -174.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Navigate" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_p8oyb")
+
+[node name="Hoverable" type="Node" parent="."]
+script = ExtResource("2_f1vl4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -187.5
+offset_top = -75.0
+offset_right = 1357.5
+offset_bottom = 523.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.136, 0.136)
+texture = ExtResource("5_r2p8b")

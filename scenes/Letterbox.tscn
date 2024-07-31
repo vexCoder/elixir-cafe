@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://np738j8coryp"]
+
+[ext_resource type="Script" path="res://src/Letterbox.gd" id="1_20fsm"]
+[ext_resource type="FontFile" uid="uid://erouq5hqnn5p" path="res://assets/fonts/munro.ttf" id="2_doen3"]
+
+[node name="Letterbox" type="MarginContainer"]
+offset_right = 600.0
+offset_bottom = 84.0
+script = ExtResource("1_20fsm")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="Label" type="Label" parent="MarginContainer"]
+clip_contents = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_doen3")
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1

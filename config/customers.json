@@ -1,0 +1,42 @@
+[
+	{
+		"id": "00001",
+		"name": "Carsen",
+		"entry_conversation": "00001",
+		"key": "npc_carsen",
+		"correct_drink": [],
+		"correct_potion": ["00001"]
+	},
+	{
+		"id": "00002",
+		"name": "Buttercup",
+		"entry_conversation": "00075",
+		"key": "npc_buttercup",
+		"correct_drink": ["00008"],
+		"correct_potion": ["00004"]
+	},
+	{
+		"id": "00003",
+		"name": "Apollo",
+		"entry_conversation": "00128",
+		"key": "npc_apollo",
+		"correct_drink": ["00006"],
+		"correct_potion": ["00003"]
+	},
+	{
+		"id": "00004",
+		"name": "Westley",
+		"entry_conversation": "00213",
+		"key": "npc_westley",
+		"correct_drink": ["00007"],
+		"correct_potion": ["00002"]
+	},
+	{
+		"id": "00005",
+		"name": "Vel & Carrie",
+		"entry_conversation": "00305",
+		"key": "npc_vel",
+		"correct_drink": ["00005"],
+		"correct_potion": ["00005"]
+	}
+]

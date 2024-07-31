@@ -1,0 +1,2881 @@
+[
+	{
+		"id": "90000",
+		"target": "narrator",
+		"text": "With a chant and a shudder of the world’s dear heart\nA darkness be summoned, a new age shall start",
+		"next": "90001"
+	},
+	{
+		"id": "90001",
+		"target": "narrator",
+		"text": "Our cult, we shall gather, by loyalty’s cord\nTo awake our great master, the dark Crowverlord!",
+		"next": "90002"
+	},
+	{
+		"id": "90002",
+		"target": "narrator",
+		"text": "Yet such lands be tainted before they be ours\nBy conquesting heroes who yield from afar",
+		"next": "90003"
+	},
+	{
+		"id": "90003",
+		"target": "narrator",
+		"text": "Nothing will stop them till our dream is lost",
+		"next": "90004"
+	},
+	{
+		"id": "90004",
+		"target": "narrator",
+		"text": "So, by your hand, let them pay the cost\nBefore all their boasting evolves into truth\nInto the shadows, may Crowverlord guide you.",
+		"next": "90005"
+	},
+	{
+		"id": "90005",
+		"target": "narrator",
+		"text": "It’s your first day working at Elixir Cafe!",
+		"next": "90006"
+	},
+	{
+		"id": "90006",
+		"target": "narrator",
+		"text": "If a hero passes by, it’s your duty to find out what they’re up to\nAnd to use your special brews to put a stop to them.\nGood luck and good blessings!",
+		"next": "90007"
+	},
+	{
+		"id": "90007",
+		"target": "narrator",
+		"text": "",
+		"final": true
+	},
+	{
+		"id": "00001",
+		"target": "npc_carsen",
+		"text": "Is this a vending machine?",
+		"responses": [
+			{
+				"text": "Yes",
+				"next": "00002"
+			},
+			{
+				"text": "No",
+				"next": "00005"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00002",
+		"target": "player",
+		"text": "Yes, sir, this is in fact the world's greatest vending machine!",
+		"next": "00003"
+	},
+	{
+		"id": "00003",
+		"target": "player",
+		"text": "Please insert your coins here.",
+		"next": "00004"
+	},
+	{
+		"id": "00004",
+		"target": "narrator",
+		"text": "He reaches into his pocket to get a coin and leans forward to press it into your headband. \nYou try looking up when there comes an air of disappointment. You've failed to make the satisfying clink sound as it falls on your forehead.",
+		"next": "00008",
+		"responseTarget": "player"
+	},
+	{
+		"id": "00005",
+		"target": "player",
+		"text": "Um... no, not that I'm aware, sir?",
+		"next": "00006"
+	},
+	{
+		"id": "00006",
+		"target": "player",
+		"text": "But... I can guarantee we can serve you MUCH better than a vending machine!",
+		"next": "00007"
+	},
+	{
+		"id": "00007",
+		"target": "narrator",
+		"text": "He takes this into account before nodding. Coming up to the counter, Carsen waves a spell to turn the registry machine around so he can input the right numbers into the better-than-a-vending-machine.",
+		"next": "00008"
+	},
+	{
+		"id": "00008",
+		"target": "player",
+		"text": "What do you think you're doing?",
+		"next": "00009"
+	},
+	{
+		"id": "00009",
+		"target": "npc_carsen",
+		"text": "Mmm... I don’t.",
+		"next": "00010"
+	},
+	{
+		"id": "00010",
+		"target": "player",
+		"text": "What?",
+		"next": "00011"
+	},
+	{
+		"id": "00011",
+		"target": "npc_carsen",
+		"text": "I don’t think.",
+		"next": "00012"
+	},
+	{
+		"id": "00012",
+		"target": "npc_carsen",
+		"text": "...",
+		"next": "00013"
+	},
+	{
+		"id": "00013",
+		"target": "narrator",
+		"text": "He seems to be dozing off.",
+		"next": "00014",
+		"responseTarget": "player"
+	},
+	{
+		"id": "00014",
+		"target": "player",
+		"text": "Hello? Still alive?",
+		"next": "00015"
+	},
+	{
+		"id": "00015",
+		"target": "npc_carsen",
+		"text": "Huh. Oh. Sorry.",
+		"next": "00016"
+	},
+	{
+		"id": "00016",
+		"target": "npc_carsen",
+		"text": "I haven’t had an energy drink this morning. Figured some coffee would be the second best option before going on that quest.",
+		"responses": [
+			{
+				"text": "Energy drink?",
+				"next": "00017"
+			},
+			{
+				"text": "Quest?",
+				"next": "00018"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00017",
+		"target": "player",
+		"text": "Energy drinks? Every morning?",
+		"next": "00019"
+	},
+	{
+		"id": "00019",
+		"target": "player",
+		"text": "That doesn’t sound healthy.",
+		"next": "00020"
+	},
+	{
+		"id": "00020",
+		"target": "npc_carsen",
+		"text": "Yeah. It’s the caffeine.",
+		"next": "00021"
+	},
+	{
+		"id": "00021",
+		"target": "npc_carsen",
+		"text": "Which is coincidentally also in coffee.",
+		"next": "00022"
+	},
+	{
+		"id": "00022",
+		"target": "player",
+		"text": "I hear energy drinks might have worse side effects.",
+		"next": "00023"
+	},
+	{
+		"id": "00023",
+		"target": "npc_carsen",
+		"text": "...Maybe coffee won’t work, then.",
+		"responses": [
+			{
+				"text": "What do you need it for?",
+				"next": "00025"
+			},
+			{
+				"text": "Are you trying to kill someone?",
+				"next": "00024"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00025",
+		"target": "player",
+		"text": "What are you trying to do with caffeinated products?",
+		"next": "00026"
+	},
+	{
+		"id": "00026",
+		"target": "npc_carsen",
+		"text": "Oh, uh. My party...",
+		"next": "00027"
+	},
+	{
+		"id": "00027",
+		"target": "narrator",
+		"text": "His eyes get foggy for a silent moment before he returns to you.",
+		"next": "00028"
+	},
+	{
+		"id": "00028",
+		"target": "narrator",
+		"text": "It seems that flashback took a lot of energy.",
+		"next": "00029"
+	},
+	{
+		"id": "00029",
+		"target": "npc_carsen",
+		"text": "You know, the whole band of adventure party... not the rave or ballroom type of party...",
+		"next": "00030"
+	},
+	{
+		"id": "00030",
+		"target": "npc_carsen",
+		"text": "We’re doing a raid-and-slay thing I think... of that evil bird’s cult...",
+		"next": "00031"
+	},
+	{
+		"id": "00031",
+		"target": "npc_carsen",
+		"text": "...and I’ll be doing some... exhausting... magic... to disable arcane anchors...",
+		"next": "00032"
+	},
+	{
+		"id": "00032",
+		"target": "npc_carsen",
+		"text": "So the others can, uh... sneak in undetected and...",
+		"next": "00033"
+	},
+	{
+		"id": "00033",
+		"target": "player",
+		"text": "Sir?",
+		"next": "00034"
+	},
+	{
+		"id": "00034",
+		"target": "npc_carsen",
+		"text": "!?",
+		"responses": [
+			{
+				"text": "So, your order?",
+				"next": "00035"
+			},
+			{
+				"text": "You desperately need rest.",
+				"next": "00036"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00035",
+		"target": "player",
+		"text": "So, what will your order be?",
+		"next": "00037"
+	},
+	{
+		"id": "00037",
+		"target": "npc_carsen",
+		"text": "Oh. Right. Uhuh. Uh... anything strong enough to keep me up for all that...",
+		"responses": [
+			{
+				"text": "ACCEPT",
+				"next": "00047"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00018",
+		"target": "player",
+		"text": "Ooh? A quest you say?",
+		"next": "00038"
+	},
+	{
+		"id": "00038",
+		"target": "player",
+		"text": "Pray tell?",
+		"next": "00039"
+	},
+	{
+		"id": "00039",
+		"target": "npc_carsen",
+		"text": "Are you asking me to pray?",
+		"next": "00040"
+	},
+	{
+		"id": "00040",
+		"target": "player",
+		"text": "What. No-",
+		"next": "00041"
+	},
+	{
+		"id": "00041",
+		"target": "player",
+		"text": "We’re NOT a cult by the way, haha. In case. That’s why you thought I was asking.",
+		"next": "00042"
+	},
+	{
+		"id": "00042",
+		"target": "npc_carsen",
+		"text": "...Okay.",
+		"next": "00043"
+	},
+	{
+		"id": "00043",
+		"target": "player",
+		"text": "Woah! Well! I’d love to hear about that quest of yours!",
+		"next": "00044"
+	},
+	{
+		"id": "00044",
+		"target": "npc_carsen",
+		"text": "Okay, so, uh... I think it's about birds, and apparently I'm a bird hater now.",
+		"next": "00045"
+	},
+	{
+		"id": "00045",
+		"target": "player",
+		"text": "Ohh, haha, well...",
+		"next": "00046"
+	},
+	{
+		"id": "00046",
+		"target": "player",
+		"text": "What type of birds don’t you like?",
+		"next": "00048"
+	},
+	{
+		"id": "00048",
+		"target": "npc_carsen",
+		"text": "idk ngl. What was it again?",
+		"next": "00049"
+	},
+	{
+		"id": "00049",
+		"target": "player",
+		"text": "Did you just say ‘idk ngl’ out loud-",
+		"next": "00050"
+	},
+	{
+		"id": "00050",
+		"target": "npc_carsen",
+		"text": "Crows? Ravens? Coravens?",
+		"next": "00051"
+	},
+	{
+		"id": "00051",
+		"target": "npc_carsen",
+		"text": "Come to think of it, I’m coraven’ some energy drinks right now. I haven’t had mine this morning...",
+		"responses": [
+			{
+				"text": "Energy drinks?",
+				"next": "00017"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00024",
+		"target": "player",
+		"text": "What’s with the whole emphasis on side effects?",
+		"next": "00052"
+	},
+	{
+		"id": "00052",
+		"target": "player",
+		"text": "Trying to kill someone?",
+		"next": "00053"
+	},
+	{
+		"id": "00053",
+		"target": "npc_carsen",
+		"text": "Oh, uh. My party...",
+		"next": "00054"
+	},
+	{
+		"id": "00054",
+		"target": "narrator",
+		"text": "His eyes get foggy for a silent moment before he returns to you.",
+		"next": "00055"
+	},
+	{
+		"id": "00055",
+		"target": "narrator",
+		"text": "It seems that flashback took a lot of energy.",
+		"next": "00056"
+	},
+	{
+		"id": "00056",
+		"target": "npc_carsen",
+		"text": "You know, the whole band of adventure party... not the rave or ballroom type of party...",
+		"next": "00057"
+	},
+	{
+		"id": "00057",
+		"target": "npc_carsen",
+		"text": "We’re doing a raid-and-slay thing I think... of that evil bird’s cult...",
+		"next": "00058"
+	},
+	{
+		"id": "00058",
+		"target": "npc_carsen",
+		"text": "...and I’ll be doing some... exhausting magic... to disable arcane anchors...",
+		"next": "00059"
+	},
+	{
+		"id": "00059",
+		"target": "npc_carsen",
+		"text": "So the others can, uh... sneak in undetected... and...",
+		"next": "00060"
+	},
+	{
+		"id": "00060",
+		"target": "player",
+		"text": "Sir?",
+		"next": "00061"
+	},
+	{
+		"id": "00061",
+		"target": "npc_carsen",
+		"text": "!?",
+		"responses": [
+			{
+				"text": "So, your order?",
+				"next": "00035"
+			},
+			{
+				"text": "You desperately need rest.",
+				"next": "00036"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00036",
+		"target": "player",
+		"text": "You desperately need some kind of rest.",
+		"next": "00062"
+	},
+	{
+		"id": "00062",
+		"target": "npc_carsen",
+		"text": "Oh, but I do get rest. Ever heard of multitasking?",
+		"next": "00063"
+	},
+	{
+		"id": "00063",
+		"target": "npc_carsen",
+		"text": "It’s like sleepwalking except you’re casting spells and fighting even crowverlords.",
+		"next": "00064"
+	},
+	{
+		"id": "00064",
+		"target": "npc_carsen",
+		"text": "I don’t really have that much control to disable magic anchors while unconscious, though... so I might need that caffeine.",
+		"next": "00065"
+	},
+	{
+		"id": "00065",
+		"target": "npc_carsen",
+		"text": "Man, I wonder where to get a drink...",
+		"responses": [
+			{
+				"text": "So, your order?",
+				"next": "00035"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00047",
+		"target": "player",
+		"text": "One Caw CAW-Fee coming up!",
+		"next": "00066"
+	},
+	{
+		"id": "00066",
+		"target": "npc_carsen",
+		"text": "What- What was that.",
+		"next": "00067"
+	},
+	{
+		"id": "00067",
+		"target": "player",
+		"text": "It’s just our slogan.",
+		"next": "00069"
+	},
+	{
+		"id": "00069",
+		"target": "npc_carsen",
+		"text": "Oh. Ok.",
+		"next": "00070"
+	},
+	{
+		"id": "00070",
+		"target": "npc_carsen",
+		"text": "Caw caw to you too.",
+		"next": "00071"
+	},
+	{
+		"id": "00071",
+		"target": "player",
+		"text": "And... name and order, please?",
+		"next": "00072"
+	},
+	{
+		"id": "00072",
+		"target": "npc_carsen",
+		"text": "Oh. Carsen.",
+		"next": "00073"
+	},
+	{
+		"id": "00073",
+		"target": "npc_carsen",
+		"text": "Any drink works, as long as it keeps me awake.",
+		"final": true
+	},
+	{
+		"id": "00074",
+		"target": "npc_carsen",
+		"text": "7/10 nap while waiting. Thanks.",
+		"outro": true
+	},
+	{
+		"id": "00075",
+		"target": "npc_buttercup",
+		"text": "Coffee, please!",
+		"responses": [
+			{
+				"text": "No weapons.",
+				"next": "00076"
+			},
+			{
+				"text": "Can you be careful with that?",
+				"next": "00077"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00076",
+		"target": "player",
+		"text": "Sorry, there! No weapons allowed in the store!",
+		"next": "00078"
+	},
+	{
+		"id": "00078",
+		"target": "narrator",
+		"text": "They stare at you, and- for a second- actually blink.",
+		"next": "00081"
+	},
+	{
+		"id": "00077",
+		"target": "player",
+		"text": "Excuse me!",
+		"next": "00079"
+	},
+	{
+		"id": "00079",
+		"target": "player",
+		"text": "Can you please be careful with that big sword?",
+		"next": "00080"
+	},
+	{
+		"id": "00080",
+		"target": "player",
+		"text": "Like... putting it away?",
+		"next": "00078"
+	},
+	{
+		"id": "00081",
+		"target": "npc_buttercup",
+		"text": "How would I defend myself, then?",
+		"next": "00082"
+	},
+	{
+		"id": "00082",
+		"target": "npc_buttercup",
+		"text": "What if a stranger offers me candy?",
+		"next": "00083"
+	},
+	{
+		"id": "00083",
+		"target": "npc_buttercup",
+		"text": "Or I have to make a quick escape?",
+		"next": "00084"
+	},
+	{
+		"id": "00084",
+		"target": "npc_buttercup",
+		"text": "I need something to take down no-entry signs.",
+		"responses": [
+			{
+				"text": "It’s dangerous.",
+				"next": "00085"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00085",
+		"target": "player",
+		"text": "Lethal weapons can, in fact, be lethal for other customers!",
+		"next": "00086"
+	},
+	{
+		"id": "00086",
+		"target": "npc_buttercup",
+		"text": "But I won’t make any mistakes.",
+		"next": "00087"
+	},
+	{
+		"id": "00087",
+		"target": "player",
+		"text": "Someone else might get hurt!",
+		"next": "00088"
+	},
+	{
+		"id": "00088",
+		"target": "npc_buttercup",
+		"text": "Oh, if they do it was intentional.",
+		"next": "00089"
+	},
+	{
+		"id": "00089",
+		"target": "npc_buttercup",
+		"text": "There will be no accidents.",
+		"responses": [
+			{
+				"text": "That’s good to hear!",
+				"next": "00090"
+			},
+			{
+				"text": "I’m scared.",
+				"next": "00091"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00090",
+		"target": "player",
+		"text": "Having no accidents around here would actually be great.",
+		"next": "00092"
+	},
+	{
+		"id": "00092",
+		"target": "npc_buttercup",
+		"text": "It would.",
+		"next": "00093"
+	},
+	{
+		"id": "00092",
+		"target": "npc_buttercup",
+		"text": "Speaking of, this order of coffee better not have any either.",
+		"next": "00093"
+	},
+	{
+		"id": "00093",
+		"target": "npc_buttercup",
+		"text": "Shoot me with a good shot of espresso to keep me up!",
+		"responses": [
+			{
+				"text": "Need to stay awake?",
+				"next": "00094"
+			},
+			{
+				"text": "I don’t have a gun.",
+				"next": "00095"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00094",
+		"target": "player",
+		"text": "Is it so dire that you have to stay awake?",
+		"next": "00096"
+	},
+	{
+		"id": "00095",
+		"target": "player",
+		"text": "But how would I shoot you? I don’t have any guns.",
+		"next": "00400"
+	},
+	{
+		"id": "00400",
+		"target": "player",
+		"text": "Or any weaponry at all.",
+		"next": "00401"
+	},
+	{
+		"id": "00401",
+		"target": "npc_buttercup",
+		"text": "Sad you can’t protect your shop.",
+		"next": "00402"
+	},
+	{
+		"id": "00402",
+		"target": "narrator",
+		"text": "They pout to convey how truly sad your circumstances are.",
+		"next": "00403"
+	},
+
+	{
+		"id": "00403",
+		"target": "npc_buttercup",
+		"text": "Luckily, me and my partymates are going to take down the overlord and you’ll all be safe!",
+		"responses": [
+			{
+				"text": "Overlord?",
+				"next": "00100"
+			},
+			{
+				"text": "You must be confident.",
+				"next": "00117"
+			}
+		],
+		"responseTarget": "player"
+	},
+
+	{
+		"id": "00096",
+		"target": "npc_buttercup",
+		"text": "Of course.",
+		"next": "00097"
+	},
+	{
+		"id": "00097",
+		"target": "npc_buttercup",
+		"text": "We’re saving the world from the dark overlord, after all.",
+		"responses": [
+			{
+				"text": "Overlord?",
+				"next": "00100"
+			},
+			{
+				"text": "You must be confident.",
+				"next": "00117"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00100",
+		"target": "player",
+		"text": "Why the overlord?",
+		"next": "00101"
+	},
+	{
+		"id": "00101",
+		"target": "npc_buttercup",
+		"text": "Cause!",
+		"next": "00102"
+	},
+	{
+		"id": "00102",
+		"target": "npc_buttercup",
+		"text": "Me and the gang are going to take that shadowy cult down once and for all.",
+		"responses": [
+			{
+				"text": "How?",
+				"next": "00103"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00103",
+		"target": "player",
+		"text": "And how do you plan to do that?",
+		"next": "00104"
+	},
+	{
+		"id": "00104",
+		"target": "npc_buttercup",
+		"text": "Well, we all have our parts.",
+		"next": "00105"
+	},
+	{
+		"id": "00105",
+		"target": "npc_buttercup",
+		"text": "Mine is to sneak in and gather information by listening to them.",
+		"next": "00106"
+	},
+	{
+		"id": "00106",
+		"target": "npc_buttercup",
+		"text": "I gotta be really attentive and remember everything, though.",
+		"next": "00107"
+	},
+	{
+		"id": "00107",
+		"target": "npc_buttercup",
+		"text": "Then, I’ll be able to piece together all their weaknesses and hatch the best plan ever egged.",
+		"responses": [
+			{
+				"text": "What.",
+				"next": "00108"
+			},
+			{
+				"text": "Yeah!",
+				"next": "00109"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00108",
+		"target": "player",
+		"text": "What.",
+		"next": "00110"
+	},
+	{
+		"id": "00110",
+		"target": "npc_buttercup",
+		"text": "So I’m gonna need your best espresso... with sprinkle and spark.",
+		"responses": [
+			{
+				"text": "ACCEPT",
+				"next": "00120"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00109",
+		"target": "player",
+		"text": "YEAH!",
+		"next": "00111"
+	},
+	{
+		"id": "00111",
+		"target": "npc_buttercup",
+		"text": "YEAH!",
+		"next": "00112"
+	},
+	{
+		"id": "00112",
+		"target": "player",
+		"text": "YEAAAH!!!!!!",
+		"next": "00113"
+	},
+	{
+		"id": "00113",
+		"target": "npc_buttercup",
+		"text": "So... I’m gonna need your best espresso... with sprinkles and spark.",
+		"responses": [
+			{
+				"text": "ACCEPT",
+				"next": "00120"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00091",
+		"target": "player",
+		"text": "I’m scared.",
+		"next": "00114"
+	},
+	{
+		"id": "00114",
+		"target": "npc_buttercup",
+		"text": "Only fear if you have a reason to.",
+		"next": "00115"
+	},
+	{
+		"id": "00115",
+		"target": "narrator",
+		"text": "They give you the biggest smile!",
+		"next": "00116"
+	},
+	{
+		"id": "00116",
+		"target": "npc_buttercup",
+		"text": "Like... if you’re an evil villain! Like that dark overlord.",
+		"responses": [
+			{
+				"text": "Overlord?",
+				"next": "00100"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00117",
+		"target": "player",
+		"text": "You must be really confident!",
+		"next": "00118"
+	},
+	{
+		"id": "00118",
+		"target": "npc_buttercup",
+		"text": "Of course!",
+		"next": "00119"
+	},
+	{
+		"id": "00119",
+		"target": "npc_buttercup",
+		"text": "I better be if the gang and I are going to take that shadowy cult down once and for all.",
+		"responses": [
+			{
+				"text": "How?",
+				"next": "00103"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00120",
+		"target": "player",
+		"text": "One Caw CAW-Fee coming up!",
+		"next": "00121"
+	},
+	{
+		"id": "00121",
+		"target": "npc_buttercup",
+		"text": "Crows are cute. Caw caw!",
+		"next": "00122"
+	},
+	{
+		"id": "00122",
+		"target": "player",
+		"text": "They are, aren’t they.",
+		"next": "00123"
+	},
+	{
+		"id": "00123",
+		"target": "npc_buttercup",
+		"text": "May or may not be fun to polymorph into...",
+		"next": "00124"
+	},
+	{
+		"id": "00124",
+		"target": "player",
+		"text": "Name and order?",
+		"next": "00125"
+	},
+	{
+		"id": "00125",
+		"target": "npc_buttercup",
+		"text": "Sorry! Right! Need that drink to stop myself from drifting off or forgetting.",
+		"next": "00126"
+	},
+	{
+		"id": "00126",
+		"target": "npc_buttercup",
+		"text": "You can write Buttercup. And I’ll have your best espresso with sprinkles.",
+		"final": true
+	},
+	{
+		"id": "00127",
+		"target": "npc_buttercup",
+		"text": "Thanks, miss! Now off to charge!",
+		"outro": true
+	},
+	{
+		"id": "00128",
+		"target": "npc_apollo",
+		"text": "Hello!",
+		"responses": [
+			{
+				"text": "Hi!",
+				"next": "00129"
+			},
+			{
+				"text": "Hello.",
+				"next": "00130"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00129",
+		"target": "player",
+		"text": "Hi! How are you today?",
+		"next": "00131"
+	},
+	{
+		"id": "00131",
+		"target": "narrator",
+		"text": "She gives a customer-service smile, all too familiar to you.",
+		"next": "00132"
+	},
+	{
+		"id": "00132",
+		"target": "narrator",
+		"text": "The half-elf remains stiff as she recites her words like a script.",
+		"next": "00133"
+	},
+	{
+		"id": "00133",
+		"target": "npc_apollo",
+		"text": "I’m doing great! But are you?",
+		"next": "00134"
+	},
+	{
+		"id": "00134",
+		"target": "npc_apollo",
+		"text": "It’s good to check in to a day at work, but have you checked in with yourself?",
+		"responses": [
+			{
+				"text": "Why are you telling me this?",
+				"next": "00142"
+			},
+			{
+				"text": "Good point!",
+				"next": "00143"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00130",
+		"target": "player",
+		"text": "Hello.",
+		"next": "00136"
+	},
+	{
+		"id": "00136",
+		"target": "narrator",
+		"text": "She gives a customer-service smile, all too familiar to you.",
+		"next": "00137"
+	},
+	{
+		"id": "00137",
+		"target": "narrator",
+		"text": "The half-elf remains stiff as she recites her words like a script.",
+		"next": "00138"
+	},
+	{
+		"id": "00138",
+		"target": "npc_apollo",
+		"text": "Hello! Love the greeting!",
+		"next": "00139"
+	},
+	{
+		"id": "00139",
+		"target": "npc_apollo",
+		"text": "It helps to notice others, but have you noticed yourself lately?",
+		"next": "00140"
+	},
+	{
+		"id": "00140",
+		"target": "npc_apollo",
+		"text": "Do you really know how you are? Or what you feel?",
+		"responses": [
+			{
+				"text": "Why are you telling me this?",
+				"next": "00142"
+			},
+			{
+				"text": "Good point!",
+				"next": "00146"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00142",
+		"target": "player",
+		"text": "Why are-",
+		"next": "00143"
+	},
+	{
+		"id": "00146",
+		"target": "player",
+		"text": "That’s a good point!",
+		"next": "00143"
+	},
+	{
+		"id": "00143",
+		"target": "npc_apollo",
+		"text": "Did you know that only 5% of residents in this region of the world receive proper therapy?",
+		"next": "00144"
+	},
+	{
+		"id": "00144",
+		"target": "npc_apollo",
+		"text": "But approximately 75% of them have had their lives changed for the better because of it!",
+		"next": "00145"
+	},
+	{
+		"id": "00145",
+		"target": "npc_apollo",
+		"text": "And the other 25%?",
+		"next": "00404"
+	},
+	{
+		"id": "00404",
+		"target": "npc_apollo",
+		"text": "Well, just you wait! Because they’re getting there, too!",
+		"next": "00147"
+	},
+	{
+		"id": "00147",
+		"target": "npc_apollo",
+		"text": "All you need is to reach out to your nearest member of Death’s Devotionist Revolution-?",
+		"next": "00148"
+	},
+	{
+		"id": "00148",
+		"target": "npc_apollo",
+		"text": "And, oh! Haha! That’s me!",
+		"next": "00149"
+	},
+	{
+		"id": "00149",
+		"target": "npc_apollo",
+		"text": "Me who can get you ready with a once in a lifetime and once in a deathtime promotional deal!",
+		"responses": [
+			{
+				"text": "Death?",
+				"next": "00405"
+			},
+			{
+				"text": "Are you advertising to me?",
+				"next": "00152"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00405",
+		"target": "player",
+		"text": "Excuse me, did you just say Death?",
+		"next": "00406"
+	},
+	{
+		"id": "00406",
+		"target": "narrator",
+		"text": "She starts to sweat.",
+		"next": "00407"
+	},
+	{
+		"id": "00407",
+		"target": "npc_apollo",
+		"text": "Aha! Um!",
+		"next": "00408"
+	},
+	{
+		"id": "00408",
+		"target": "npc_apollo",
+		"text": "Yes! We followers of the god of death are changing our marketing methods!",
+		"next": "00150"
+	},
+	{
+		"id": "00150",
+		"target": "npc_apollo",
+		"text": "Especially after the whole old doom and gloom wasn’t working for the brand.",
+		"next": "00151"
+	},
+	{
+		"id": "00151",
+		"target": "npc_apollo",
+		"text": "But, unlike the overlord or others, we’re not evil!",
+		"responses": [
+			{
+				"text": "You’re against the overlord?",
+				"next": "00160"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00152",
+		"target": "player",
+		"text": "Hold on...",
+		"next": "00153"
+	},
+	{
+		"id": "00153",
+		"target": "player",
+		"text": "Are you advertising to the cashier... at a commercial establishment right now?",
+		"next": "00154"
+	},
+	{
+		"id": "00154",
+		"target": "player",
+		"text": "While I’m working?",
+		"next": "00155"
+	},
+	{
+		"id": "00155",
+		"target": "narrator",
+		"text": "She starts to sweat.",
+		"next": "00156"
+	},
+	{
+		"id": "00156",
+		"target": "npc_apollo",
+		"text": "Aha! Um!",
+		"next": "00157"
+	},
+	{
+		"id": "00157",
+		"target": "npc_apollo",
+		"text": "Yes. It’s important that anyone hears this message and does what they can to take care of themselves!",
+		"next": "00158"
+	},
+	{
+		"id": "00158",
+		"target": "npc_apollo",
+		"text": "Our cult does not discriminate! Anyone who needs help shall be helped.",
+		"next": "00159"
+	},
+	{
+		"id": "00159",
+		"target": "npc_apollo",
+		"text": "Unlike the overlord or others, we’re not evil!",
+		"responses": [
+			{
+				"text": "You’re against the overlord?",
+				"next": "00160"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00160",
+		"target": "player",
+		"text": "You’re against the overlord, too?",
+		"next": "00161"
+	},
+	{
+		"id": "00161",
+		"target": "npc_apollo",
+		"text": "Oh! That question wasn’t in the book...",
+		"next": "00162"
+	},
+	{
+		"id": "00162",
+		"target": "npc_apollo",
+		"text": "But, yes, my party and I are actually on a quest to defeat them!",
+		"responses": [
+			{
+				"text": "Why are you here, then?",
+				"next": "00163"
+			},
+			{
+				"text": "Need some drinks for the adventure?",
+				"next": "00177"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00163",
+		"target": "player",
+		"text": "That’s noble.",
+		"next": "00164"
+	},
+	{
+		"id": "00164",
+		"target": "player",
+		"text": "But why are you here pitching the concept of therapy to me?",
+		"next": "00165"
+	},
+	{
+		"id": "00165",
+		"target": "npc_apollo",
+		"text": "Well.",
+		"next": "00166"
+	},
+	{
+		"id": "00166",
+		"target": "npc_apollo",
+		"text": "You work in customer service, so clearly you need it.",
+		"next": "00167"
+	},
+	{
+		"id": "00167",
+		"target": "player",
+		"text": "Oh.",
+		"next": "00168"
+	},
+	{
+		"id": "00168",
+		"target": "npc_apollo",
+		"text": "And, as a healer, it’s my job to  help those who are hurt.",
+		"next": "00169"
+	},
+	{
+		"id": "00169",
+		"target": "npc_apollo",
+		"text": "Whether it’s wounds in battle, or trying to take down the overlord...",
+		"next": "00170"
+	},
+	{
+		"id": "00170",
+		"target": "npc_apollo",
+		"text": "Or poor victims of working in retail.",
+		"responses": [
+			{
+				"text": "My hero!",
+				"next": "00171"
+			},
+			{
+				"text": "I’m not poor.",
+				"next": "00184"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00171",
+		"target": "player",
+		"text": "Oh, thank you, my hero!",
+		"next": "00172"
+	},
+	{
+		"id": "00172",
+		"target": "player",
+		"text": "The best you could ever do for me as my savior...",
+		"next": "00173"
+	},
+	{
+		"id": "00173",
+		"target": "narrator",
+		"text": "You theatrically brandish the hottest spot on the menu.",
+		"next": "00174"
+	},
+	{
+		"id": "00174",
+		"target": "player",
+		"text": "Is to order!",
+		"next": "00175"
+	},
+	{
+		"id": "00175",
+		"target": "npc_apollo",
+		"text": "Oh!",
+		"next": "00176"
+	},
+	{
+		"id": "00176",
+		"target": "npc_apollo",
+		"text": "Yes! Do I have to pay",
+		"responses": [
+			{
+				"text": "Yes.",
+				"next": "00192"
+			},
+			{
+				"text": "No.",
+				"next": "00197"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00177",
+		"target": "player",
+		"text": "In that case!",
+		"next": "00178"
+	},
+	{
+		"id": "00178",
+		"target": "player",
+		"text": "Do you need drinks for that adventure?",
+		"next": "00179"
+	},
+	{
+		"id": "00179",
+		"target": "npc_apollo",
+		"text": "Hm! I know drinks usually give positive status effects.",
+		"next": "00180"
+	},
+	{
+		"id": "00180",
+		"target": "npc_apollo",
+		"text": "And, as a healer, it’s my job to help those who are hurt.",
+		"next": "00181"
+	},
+	{
+		"id": "00181",
+		"target": "npc_apollo",
+		"text": "Whether it’s wounds in battle, or trying to take down the overlord...",
+		"next": "00182"
+	},
+	{
+		"id": "00182",
+		"target": "npc_apollo",
+		"text": "It would be a crime to not stack-up on those before the fight.",
+		"next": "00183"
+	},
+	{
+		"id": "00183",
+		"target": "player",
+		"text": "So, would you like to order now?",
+		"next": "00176"
+	},
+	{
+		"id": "00184",
+		"target": "player",
+		"text": "Uh, I’m not actually a victim, or poor for that matter.",
+		"next": "00185"
+	},
+	{
+		"id": "00185",
+		"target": "npc_apollo",
+		"text": "That’s okay.",
+		"next": "00186"
+	},
+	{
+		"id": "00186",
+		"target": "npc_apollo",
+		"text": "A lot of people are unaware when they’re in distress.",
+		"next": "00187"
+	},
+	{
+		"id": "00187",
+		"target": "npc_apollo",
+		"text": "Which is why they need therapy to help process it.",
+		"next": "00188"
+	},
+	{
+		"id": "00188",
+		"target": "player",
+		"text": "Well, you know what could help me right now?",
+		"next": "00189"
+	},
+	{
+		"id": "00189",
+		"target": "narrator",
+		"text": "Her eyes sparkle at the opportunity to help someone.",
+		"next": "00190"
+	},
+	{
+		"id": "00190",
+		"target": "npc_apollo",
+		"text": "What? What would help?",
+		"next": "00191"
+	},
+	{
+		"id": "00191",
+		"target": "player",
+		"text": "The best way to help...",
+		"next": "00173"
+	},
+	{
+		"id": "00192",
+		"target": "player",
+		"text": "I mean. This is Elixir Cafe. It’s a coffee shop.",
+		"next": "00193"
+	},
+	{
+		"id": "00193",
+		"target": "player",
+		"text": "So, yes, you do have to pay; that’s how this works.",
+		"next": "00194"
+	},
+	{
+		"id": "00194",
+		"target": "npc_apollo",
+		"text": "There’s no first-try free deal?",
+		"next": "00195"
+	},
+	{
+		"id": "00195",
+		"target": "player",
+		"text": "Unfortunately not?",
+		"next": "00196"
+	},
+	{
+		"id": "00196",
+		"target": "npc_apollo",
+		"text": "Oh, okay...",
+		"next": "00205"
+	},
+	{
+		"id": "00197",
+		"target": "player",
+		"text": "I... oh you look too expectant for a no.",
+		"next": "00198"
+	},
+	{
+		"id": "00198",
+		"target": "player",
+		"text": "Usually, people have to pay.",
+		"next": "00199"
+	},
+	{
+		"id": "00199",
+		"target": "narrator",
+		"text": "She looks disappointed. But you really need her to order.",
+		"next": "00200"
+	},
+	{
+		"id": "00200",
+		"target": "player",
+		"text": "BUT!",
+		"next": "00201"
+	},
+	{
+		"id": "00201",
+		"target": "player",
+		"text": "You’re not usual people!",
+		"next": "00202"
+	},
+	{
+		"id": "00202",
+		"target": "npc_apollo",
+		"text": "Oh?",
+		"next": "00203"
+	},
+	{
+		"id": "00203",
+		"target": "player",
+		"text": "Yes, you have our special... first-try-free deal!",
+		"next": "00204"
+	},
+	{
+		"id": "00204",
+		"target": "npc_apollo",
+		"text": "Really? Yay! Thank you so much!",
+		"next": "00205"
+	},
+	{
+		"id": "00205",
+		"target": "npc_apollo",
+		"text": "I suppose a cup of coffee could help me take care of my party more carefully?",
+		"next": "00206"
+	},
+	{
+		"id": "00206",
+		"target": "npc_apollo",
+		"text": "Well, I’ll order that one. The one with the cute fruit on top!",
+		"responses": [
+			{
+				"text": "ACCEPT",
+				"next": "00207"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00207",
+		"target": "player",
+		"text": "One Caw CAW-Fee coming up!",
+		"next": "00208"
+	},
+	{
+		"id": "00208",
+		"target": "npc_apollo",
+		"text": "Would you like to sign up for our membership with that?",
+		"next": "00209"
+	},
+	{
+		"id": "00209",
+		"target": "player",
+		"text": "What.",
+		"next": "00409"
+	},
+	{
+		"id": "00409",
+		"target": "npc_apollo",
+		"text": "Oh! Sorry! It’s a habit...",
+		"next": "00410"
+	},
+	{
+		"id": "00410",
+		"target": "player",
+		"text": "That’s alright! Name and order, please.",
+		"next": "00210"
+	},
+	{
+		"id": "00210",
+		"target": "npc_apollo",
+		"text": "Right! Apollo, Sonne of Death.",
+		"next": "00211"
+	},
+	{
+		"id": "00211",
+		"target": "npc_apollo",
+		"text": "The one with the cute red fruit on top so I can be just as sweet and kind to my friends on this quest!",
+		"final": true
+	},
+	{
+		"id": "00212",
+		"target": "npc_apollo",
+		"text": "Thank you so much! May Death bless you kindly.",
+		"outro": true
+	},
+	{
+		"id": "00213",
+		"target": "npc_westley",
+		"text": "The regular, please~",
+		"responses": [
+			{
+				"text": "Who are you!?",
+				"next": "00214"
+			},
+			{
+				"text": "Regular?",
+				"next": "00215"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00214",
+		"target": "player",
+		"text": "Hello? Who even are you?",
+		"next": "00216"
+	},
+	{
+		"id": "00215",
+		"target": "player",
+		"text": "The regular? I’ve never even seen you before.",
+		"next": "00216"
+	},
+	{
+		"id": "00216",
+		"target": "npc_westley",
+		"text": "It is I!",
+		"next": "00217"
+	},
+	{
+		"id": "00217",
+		"target": "npc_westley",
+		"text": "Westley Storme T. Fibercastell.",
+		"next": "00218"
+	},
+	{
+		"id": "00218",
+		"target": "npc_westley",
+		"text": "I’ve come for your finest brews.",
+		"next": "00219"
+	},
+	{
+		"id": "00219",
+		"target": "npc_westley",
+		"text": "And I’m even going to pay for it!",
+		"responses": [
+			{
+				"text": "Pay for it?",
+				"next": "00220"
+			},
+			{
+				"text": "Thank you.",
+				"next": "00224"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00220",
+		"target": "player",
+		"text": "You’re actually going to pay for it?",
+		"next": "00221"
+	},
+	{
+		"id": "00221",
+		"target": "player",
+		"text": "Well, that’s a relief.",
+		"next": "00222"
+	},
+	{
+		"id": "00222",
+		"target": "npc_westley",
+		"text": "It really is, isn’t it.",
+		"next": "00223"
+	},
+	{
+		"id": "00223",
+		"target": "npc_westley",
+		"text": "You must be wondering why.",
+		"responses": [
+			{
+				"text": "I wasn’t.",
+				"next": "00226"
+			},
+			{
+				"text": "I was.",
+				"next": "00226"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00224",
+		"target": "player",
+		"text": "Thank you, kindly.",
+		"next": "00225"
+	},
+	{
+		"id": "00225",
+		"target": "npc_westley",
+		"text": "Of course, you must be wondering why I plan to pay today.",
+		"responses": [
+			{
+				"text": "I wasn’t.",
+				"next": "00226"
+			},
+			{
+				"text": "I was.",
+				"next": "00226"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00226",
+		"target": "player",
+		"text": "I wa-",
+		"next": "00227"
+	},
+	{
+		"id": "00227",
+		"target": "npc_westley",
+		"text": "For today is a special day!",
+		"next": "00228"
+	},
+	{
+		"id": "00228",
+		"target": "npc_westley",
+		"text": "It will be the greatest performance you’ll ever fail to witness.",
+		"next": "00229"
+	},
+	{
+		"id": "00229",
+		"target": "npc_westley",
+		"text": "Because it’s secret. And you’ll never see it coming.",
+		"next": "00230"
+	},
+	{
+		"id": "00230",
+		"target": "npc_westley",
+		"text": "And neither will they!",
+		"responses": [
+			{
+				"text": "Who!?",
+				"next": "00231"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00231",
+		"target": "npc_westley",
+		"text": "The EVIL OVERLORD!!!",
+		"next": "00232"
+	},
+	{
+		"id": "00232",
+		"target": "npc_westley",
+		"text": "They say that such a tyrant must not traverse these lands!",
+		"next": "00233"
+	},
+	{
+		"id": "00233",
+		"target": "player",
+		"text": "Gasp.",
+		"next": "00234"
+	},
+	{
+		"id": "00234",
+		"target": "player",
+		"text": "How... evil!",
+		"next": "00235"
+	},
+	{
+		"id": "00235",
+		"target": "npc_westley",
+		"text": "Precisely! And that is why I must keep my crew’s plan a secret!",
+		"next": "00236"
+	},
+	{
+		"id": "00236",
+		"target": "npc_westley",
+		"text": "No one knows about this, not even you!",
+		"responses": [
+			{
+				"text": "I don’t!",
+				"next": "00237"
+			},
+			{
+				"text": "I do...",
+				"next": "00239"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00237",
+		"target": "player",
+		"text": "Oh, gosh, I really don’t!",
+		"next": "00238"
+	},
+	{
+		"id": "00238",
+		"target": "npc_westley",
+		"text": "Of course you don’t!",
+		"next": "00241"
+	},
+	{
+		"id": "00239",
+		"target": "player",
+		"text": "I do, actually.",
+		"next": "00240"
+	},
+	{
+		"id": "00240",
+		"target": "npc_westley",
+		"text": "Wrong.",
+		"next": "00241"
+	},
+	{
+		"id": "00241",
+		"target": "npc_westley",
+		"text": "I would never have such magnificent secrets spoiled to the likes of you! Anyways-.",
+		"next": "00243"
+	},
+	{
+		"id": "00243",
+		"target": "npc_westley",
+		"text": "Each member of the crew has their own spectacular performance!",
+		"next": "00244"
+	},
+	{
+		"id": "00244",
+		"target": "npc_westley",
+		"text": "I, Westley Storme T. Fibercastell, have been burdened with the plundering of artifacts!",
+		"next": "00245"
+	},
+	{
+		"id": "00245",
+		"target": "player",
+		"text": "Like a pirate?",
+		"next": "00247"
+	},
+	{
+		"id": "00247",
+		"target": "npc_westley",
+		"text": "YES!!! Just like a pirate! Because...",
+		"next": "00248"
+	},
+	{
+		"id": "00248",
+		"target": "npc_westley",
+		"text": "I AM A PIRATE!!!",
+		"next": "00250"
+	},
+	{
+		"id": "00250",
+		"target": "npc_westley",
+		"text": "I’ve always wanted to be one, ever since I was a wee boy!",
+		"next": "00251"
+	},
+	{
+		"id": "00251",
+		"target": "npc_westley",
+		"text": "I just really like the aesthetic.",
+		"responses": [
+			{
+				"text": "What artifacts?",
+				"next": "00252"
+			},
+			{
+				"text": "Who’s your crew?",
+				"next": "00264"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00252",
+		"target": "player",
+		"text": "You’re doing some plundering? Of what sort of artifacts?",
+		"next": "00254"
+	},
+	{
+		"id": "00254",
+		"target": "npc_westley",
+		"text": "Why, yes. Have you heard?",
+		"next": "00255"
+	},
+	{
+		"id": "00255",
+		"target": "npc_westley",
+		"text": "There’s a great evil that lurks in the shadows... The Overlord!",
+		"next": "00256"
+	},
+	{
+		"id": "00256",
+		"target": "player",
+		"text": "You told me that earlier.",
+		"next": "00257"
+	},
+	{
+		"id": "00257",
+		"target": "npc_westley",
+		"text": "No-",
+		"next": "00258"
+	},
+	{
+		"id": "00258",
+		"target": "player",
+		"text": "Right, you never told anyone.",
+		"next": "00259"
+	},
+	{
+		"id": "00259",
+		"target": "npc_westley",
+		"text": "Precisely.",
+		"next": "00260"
+	},
+	{
+		"id": "00260",
+		"target": "npc_westley",
+		"text": "Now, their cult has these special artifacts that, if taken, will render their lord vulnerable!",
+		"next": "00261"
+	},
+	{
+		"id": "00261",
+		"target": "npc_westley",
+		"text": "But, woe... they lie right under those lunatics' noses!",
+		"next": "00262"
+	},
+	{
+		"id": "00262",
+		"target": "npc_westley",
+		"text": "So my theft must be concentrated, silent and briefly over...",
+		"next": "00263"
+	},
+	{
+		"id": "00263",
+		"target": "npc_westley",
+		"text": "Luckily, I happen to be all of those.",
+		"responses": [
+			{
+				"text": "Advertise!",
+				"next": "00277"
+			},
+			{
+				"text": "Doubt.",
+				"next": "00290"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00264",
+		"target": "player",
+		"text": "So, who is this great crew you plunder for?",
+		"next": "00265"
+	},
+	{
+		"id": "00265",
+		"target": "npc_westley",
+		"text": "Why, yes. Have you heard?",
+		"next": "00266"
+	},
+	{
+		"id": "00266",
+		"target": "npc_westley",
+		"text": "There’s a great evil that lurks in the shadows... The Overlord!",
+		"next": "00267"
+	},
+	{
+		"id": "00267",
+		"target": "player",
+		"text": "You told me that earlier.",
+		"next": "00268"
+	},
+	{
+		"id": "00268",
+		"target": "npc_westley",
+		"text": "No-",
+		"next": "00269"
+	},
+	{
+		"id": "00269",
+		"target": "player",
+		"text": "Right, you never told anyone.",
+		"next": "00270"
+	},
+	{
+		"id": "00270",
+		"target": "npc_westley",
+		"text": "Precisely.",
+		"next": "00271"
+	},
+	{
+		"id": "00271",
+		"target": "npc_westley",
+		"text": "I’m working with Carsen Ketch, the great wizard!",
+		"next": "00272"
+	},
+	{
+		"id": "00272",
+		"target": "npc_westley",
+		"text": "Apollo, the heartful healer!",
+		"next": "00273"
+	},
+	{
+		"id": "00273",
+		"target": "npc_westley",
+		"text": "That flower-crown kid who scares me!",
+		"next": "00274"
+	},
+	{
+		"id": "00274",
+		"target": "npc_westley",
+		"text": "And the other ones I’ don’t remember the names of since we don’t actually see them...",
+		"next": "00275"
+	},
+	{
+		"id": "00275",
+		"target": "player",
+		"text": "And how about you?",
+		"next": "00276"
+	},
+	{
+		"id": "00276",
+		"target": "npc_westley",
+		"text": "Glad you asked!",
+		"next": "00260"
+	},
+	{
+		"id": "00277",
+		"target": "player",
+		"text": "It seems like you have all of this handled so well.",
+		"next": "00278"
+	},
+	{
+		"id": "00278",
+		"target": "player",
+		"text": "So, wouldn’t the task become... boring?",
+		"next": "00279"
+	},
+	{
+		"id": "00279",
+		"target": "npc_westley",
+		"text": "Oh?",
+		"next": "00280"
+	},
+	{
+		"id": "00280",
+		"target": "player",
+		"text": "Well, you’d have such an easy time!",
+		"next": "00281"
+	},
+	{
+		"id": "00281",
+		"target": "player",
+		"text": "How could you expect to keep focused if everything is such a mind-numbing breeze for your mighty skill?",
+		"next": "00282"
+	},
+	{
+		"id": "00282",
+		"target": "npc_westley",
+		"text": "I see your point...",
+		"next": "00283"
+	},
+	{
+		"id": "00283",
+		"target": "npc_westley",
+		"text": "And if something unexpected were to happen, I wouldn’t be able to notice!",
+		"next": "00284"
+	},
+	{
+		"id": "00284",
+		"target": "player",
+		"text": "Then you’d delight in trying one of our drinks!",
+		"next": "00285"
+	},
+	{
+		"id": "00285",
+		"target": "player",
+		"text": "It’ll keep you concentrated even in the most dull of events.",
+		"next": "00286"
+	},
+	{
+		"id": "00286",
+		"target": "npc_westley",
+		"text": "Hah! Perfect!",
+		"next": "00287"
+	},
+	{
+		"id": "00287",
+		"target": "npc_westley",
+		"text": "Then, rather than the regular I ordered earlier...",
+		"next": "00288"
+	},
+	{
+		"id": "00288",
+		"target": "npc_westley",
+		"text": "I'll trust you to it to make whatever will help me keep quiet and sound-minded during this operation.",
+		"next": "00289"
+	},
+	{
+		"id": "00289",
+		"target": "npc_westley",
+		"text": "As long as there are chocolate flakes... I do love those!",
+		"responses": [
+			{
+				"text": "ACCEPT",
+				"next": "00299"
+			}
+		],
+		"responseTarget": "player"
+	},
+	{
+		"id": "00290",
+		"target": "player",
+		"text": "I. Don’t think you’re any of those.",
+		"next": "00291"
+	},
+	{
+		"id": "00291",
+		"target": "npc_westley",
+		"text": "That might be true.",
+		"next": "00292"
+	},
+	{
+		"id": "00292",
+		"target": "npc_westley",
+		"text": "But confidence is key in situations like this!",
+		"next": "00293"
+	},
+	{
+		"id": "00293",
+		"target": "player",
+		"text": "Or... proper planning!",
+		"next": "00294"
+	},
+	{
+		"id": "00294",
+		"target": "npc_westley",
+		"text": "Whatever do you mean?",
+		"next": "00295"
+	},
+	{
+		"id": "00295",
+		"target": "player",
+		"text": "I think... a drink of ours could help!",
+		"next": "00296"
+	},
+	{
+		"id": "00296",
+		"target": "player",
+		"text": "We have one that can help with your weaknesses. All you need to do is ask!",
+		"next": "00297"
+	},
+	{
+		"id": "00297",
+		"target": "npc_westley",
+		"text": "Wow! I didn’t know caffeine could do that!",
+		"next": "00298"
+	},
+	{
+		"id": "00298",
+		"target": "player",
+		"text": "Anything can do anything with proper marketing.",
+		"next": "00286"
+	},
+	{
+		"id": "00299",
+		"target": "player",
+		"text": "One Caw CAW-Fee coming up!",
+		"next": "00300"
+	},
+	{
+		"id": "00300",
+		"target": "npc_westley",
+		"text": "Oh, I do love birds. Parrots especially. Caw caw!",
+		"next": "00301"
+	},
+	{
+		"id": "00301",
+		"target": "player",
+		"text": "That’s not a parro-",
+		"next": "00302"
+	},
+	{
+		"id": "00302",
+		"target": "npc_westley",
+		"text": "That’ll be something to keep Westley Storme T. Fibercastell silent and sound...",
+		"next": "00303"
+	},
+	{
+		"id": "00303",
+		"target": "npc_westley",
+		"text": "With some chocolatey goodness atop~",
+		"final": true
+	},
+	{
+		"id": "00304",
+		"target": "npc_westley",
+		"text": "Ah, why may you receive Westley Storme T. Fibercastell’s eternal gratitude! That's me, by the way.",
+		"outro": true
+	},
+
+	{
+        "id": "00305",
+        "target": "npc_vel",
+        "text": "That took forever.",
+         "responses": [
+            {
+                "text": "Sorry.",
+                "next": "00306"
+            },
+            {
+                "text": "Not my fault.",
+                "next": "00312"
+            }
+        ],
+        "responseTarget": "player"
+    },
+    {
+        "id": "00306",
+        "target": "player",
+        "text": "I’m so sorry!",
+        "next": "00307"
+    },
+    {
+        "id": "00307",
+        "target": "player",
+        "text": "Our lines aren’t usually held up like that.",
+        "next": "00308"
+    },
+    {
+        "id": "00308",
+        "target": "player",
+        "text": "I swear it was the chatter, not the preparation",
+        "next": "00309"
+    },
+    {
+        "id": "00309",
+        "target": "player",
+        "text": "You won’t have to worry about waiting so long for your drink!",
+        "next": "00310"
+    },
+    {
+        "id": "00310",
+        "target": "narrator",
+        "text": "He scans you intently, analyzing your every move as you speak.",
+        "next": "00311"
+    },
+    {
+        "id": "00311",
+        "target": "npc_vel",
+        "text": "Hmm...!",
+         "responses": [
+            {
+                "text": "Is there a problem?",
+                "next": "00316"
+            }
+        ],
+        "responseTarget": "player"
+    },
+    {
+        "id": "00312",
+        "target": "narrator",
+        "text": "You shrug.",
+        "next": "00313"
+    },
+    {
+        "id": "00313",
+        "target": "player",
+        "text": "Not my fault.",
+        "next": "00314"
+    },
+    {
+        "id": "00314",
+        "target": "narrator",
+        "text": "He nods, eyeing you intently as you speak.",
+        "next": "00315"
+    },
+    {
+        "id": "00315",
+        "target": "npc_vel",
+        "text": "That is correct.",
+         "responses": [
+            {
+                "text": "Is this a test?",
+                "next": "00319"
+            },
+            {
+                "text": "Is there a problem?",
+                "next": "00316"
+            }
+        ],
+        "responseTarget": "player"
+    },
+    {
+        "id": "00316",
+        "target": "player",
+        "text": "Excuse me? Is there still a problem?",
+        "next": "00317"
+    },
+    {
+        "id": "00317",
+        "target": "player",
+        "text": "I’m sorry again if there is!",
+        "next": "00318"
+    },
+    {
+        "id": "00318",
+        "target": "npc_vel",
+        "text": "Precisely. Too many justifications.",
+        "next": "00321"
+    },
+    {
+        "id": "00319",
+        "target": "player",
+        "text": "Excuse me? Is this some sort of test?",
+        "next": "00320"
+    },
+    {
+        "id": "00320",
+        "target": "npc_vel",
+        "text": "Only if you have intention of letting failure be an option.",
+        "next": "00321"
+    },
+    {
+        "id": "00321",
+        "target": "narrator",
+        "text": "You hear the child speak.",
+        "next": "00322"
+    },
+    {
+        "id": "00322",
+        "target": "narrator",
+        "text": "It’s in English. You just can’t understand her for some reason.",
+        "next": "00323"
+    },
+    {
+        "id": "00323",
+        "target": "npc_vel",
+        "text": "Ah. I see, Carrie.",
+        "next": "00324"
+    },
+    {
+        "id": "00324",
+        "target": "npc_vel",
+        "text": "Perhaps I’m being too harsh.",
+         "responses": [
+            {
+                "text": "Carrie?",
+                "next": "00325"
+            },
+            {
+                "text": "Harsh?",
+                "next": "00327"
+            }
+        ],
+        "responseTarget": "player"
+    },
+    {
+        "id": "00325",
+        "target": "player",
+        "text": "Is Carrie the-",
+        "next": "00326"
+    },
+    {
+        "id": "00326",
+        "target": "npc_vel",
+        "text": "Correct.",
+        "next": "00331"
+    },
+    {
+        "id": "00327",
+        "target": "player",
+        "text": "Harsh?",
+        "next": "00328"
+    },
+    {
+        "id": "00328",
+        "target": "npc_vel",
+        "text": "Yes. I intend to judge whether this place is viable for Carrie to order from.",
+        "next": "00329"
+    },
+    {
+        "id": "00329",
+        "target": "player",
+        "text": "Well, tell her that she is more than welcome to order whatever she wishes!",
+        "next": "00330"
+    },
+    {
+        "id": "00330",
+        "target": "npc_vel",
+        "text": "I see.",
+        "next": "00331"
+    },
+    {
+        "id": "00331",
+        "target": "npc_vel",
+        "text": "She wants a corncake milkshake.",
+         "responses": [
+            {
+                "text": "We don’t serve that...",
+                "next": "00332"
+            }
+        ],
+        "responseTarget": "player"
+    },
+    {
+        "id": "00332",
+        "target": "player",
+        "text": "I’m afraid we don’t serve that!",
+        "next": "00333"
+    },
+    {
+        "id": "00333",
+        "target": "player",
+        "text": "Though we do have other options on our wonderful menu to choose from.",
+        "next": "00334"
+    },
+    {
+        "id": "00334",
+        "target": "narrator",
+        "text": "He relays this to Carrie and hands her one of the menus on the counter.",
+        "next": "00335"
+    },
+    {
+        "id": "00335",
+        "target": "npc_vel",
+        "text": "Thank you. She will be choosing now.",
+        "next": "00336"
+    },
+    {
+        "id": "00336",
+        "target": "npc_vel",
+        "text": "...",
+         "responses": [
+            {
+                "text": "Found anything?",
+                "next": "00337"
+            }
+        ],
+        "responseTarget": "player"
+    },
+    {
+        "id": "00337",
+        "target": "player",
+        "text": "Have you found anything to your liking, Miss Carrie?",
+        "next": "00338"
+    },
+    {
+        "id": "00338",
+        "target": "npc_vel",
+        "text": "Mm. Yes, she has, now.",
+        "next": "00339"
+    },
+    {
+        "id": "00339",
+        "target": "player",
+        "text": "Great! What will it be?",
+        "next": "00340"
+    },
+    {
+        "id": "00340",
+        "target": "npc_vel",
+        "text": "One corncake milkshake.",
+         "responses": [
+            {
+                "text": "...",
+                "next": "00341"
+            }
+        ],
+        "responseTarget": "player"
+    },
+    {
+        "id": "00341",
+        "target": "player",
+        "text": "...",
+        "next": "00342"
+    },
+    {
+        "id": "00342",
+        "target": "npc_vel",
+        "text": "Hm. It seems your order makes the employee speechless.",
+        "next": "00343"
+    },
+    {
+        "id": "00343",
+        "target": "player",
+        "text": "I’m really, really sorry! I already told you we don’t serve that, little one.",
+        "next": "00344"
+    },
+    {
+        "id": "00344",
+        "target": "npc_vel",
+        "text": "...You will refrain from bringing up my height.",
+        "next": "00345"
+    },
+    {
+        "id": "00345",
+        "target": "npc_vel",
+        "text": "I can reach my own machines and that’s all the height I need.",
+         "responses": [
+            {
+                "text": "Machines?",
+                "next": "00346"
+            },
+            {
+                "text": "I wasn’t talking to you.",
+                "next": "00354"
+            }
+        ],
+        "responseTarget": "player"
+    },
+    {
+        "id": "00346",
+        "target": "player",
+        "text": "Huh. Your own machines?",
+        "next": "00347"
+    },
+    {
+        "id": "00347",
+        "target": "player",
+        "text": "Are you a mechanic?",
+        "next": "00348"
+    },
+    {
+        "id": "00348",
+        "target": "npc_vel",
+        "text": "Yes. In fact, we're working on a very important project right now.",
+        "next": "00349"
+    },
+    {
+        "id": "00349",
+        "target": "npc_vel",
+        "text": "Carrie intends to stay an all-nighter, and her favorite drink is usually what keeps her calm.",
+        "next": "00350"
+    },
+    {
+        "id": "00350",
+        "target": "player",
+        "text": "In that case, we can find something we DO have that works for her!",
+        "next": "00351"
+    },
+    {
+        "id": "00351",
+        "target": "npc_vel",
+        "text": "Hm... Interesting offer. Carrie?",
+        "next": "00352"
+    },
+    {
+        "id": "00352",
+        "target": "npc_vel",
+        "text": "...Mhm.",
+        "next": "00353"
+    },
+    {
+        "id": "00353",
+        "target": "npc_vel",
+        "text": "You’re sure you don’t have it?",
+         "responses": [
+            {
+                "text": "No.",
+                "next": "00358"
+            },
+            {
+                "text": "Maybe...",
+                "next": "00369"
+            }
+        ],
+        "responseTarget": "player"
+    },
+    {
+        "id": "00354",
+        "target": "player",
+        "text": "Sir, I wasn’t talking to you when I said, ‘little one’.",
+        "next": "00355"
+    },
+    {
+        "id": "00355",
+        "target": "npc_vel",
+        "text": "Hm.",
+        "next": "00356"
+    },
+    {
+        "id": "00356",
+        "target": "npc_vel",
+        "text": "Got far too used to it being brought up by the team I associated with..",
+        "next": "00357"
+    },
+    {
+        "id": "00357",
+        "target": "npc_vel",
+        "text": "We’ve had enough on our plate to work on since joining them.",
+        "next": "00349"
+    },
+    {
+        "id": "00358",
+        "target": "player",
+        "text": "No, I’m afraid not!",
+        "next": "00359"
+    },
+    {
+        "id": "00359",
+        "target": "narrator",
+        "text": "As he relays this, the child begins to climb up on the counter.",
+        "next": "00360"
+    },
+    {
+        "id": "00360",
+        "target": "player",
+        "text": "Hey- what’re you doing?",
+        "next": "00361"
+    },
+    {
+        "id": "00361",
+        "target": "npc_vel",
+        "text": "She will check to be sure.",
+        "next": "00362"
+    },
+    {
+        "id": "00362",
+        "target": "narrator",
+        "text": "You have some classified things behind this counter!",
+        "next": "00411"
+    },
+   {
+        "id": "00411",
+        "target": "npc_vel",
+        "text": "The independence of this child. A liberty and a curse.",
+         "responses": [
+            {
+                "text": "Push her off.",
+                "next": "00363"
+            },
+            {
+                "text": "Beg?",
+                "next": "00378"
+            }
+        ],
+        "responseTarget": "player"
+    },
+    {
+        "id": "00363",
+        "target": "narrator",
+        "text": "You push the child off the counter, back into her companion’s arms.",
+        "next": "00364"
+    },
+    {
+        "id": "00364",
+        "target": "npc_vel",
+        "text": "I’d relay her frustrations towards you...",
+        "next": "00365"
+    },
+    {
+        "id": "00365",
+        "target": "npc_vel",
+        "text": "If it wasn’t for the fact I believe that was the only way you could’ve gotten her down.",
+        "next": "00366"
+    },
+    {
+        "id": "00366",
+        "target": "player",
+        "text": "Oh... is she mad at me?",
+        "next": "00367"
+    },
+    {
+        "id": "00367",
+        "target": "npc_vel",
+        "text": "She won’t be mad anymore when I explain that the area of the world behind the counter isn’t complete yet.",
+        "next": "00369"
+    },
+    {
+        "id": "00369",
+        "target": "player",
+        "text": "I got it! Well... maybe I could try whipping something up!",
+        "next": "00370"
+    },
+
+    {
+        "id": "00370",
+        "target": "player",
+        "text": "It could be just like a...",
+        "next": "00371"
+    },
+    {
+        "id": "00371",
+        "target": "npc_vel",
+        "text": "Corncake milkshake.",
+        "next": "00372"
+    },
+    {
+        "id": "00372",
+        "target": "player",
+        "text": "That!",
+        "next": "00373"
+    },
+    {
+        "id": "00373",
+        "target": "npc_vel",
+        "text": "I see.",
+        "next": "00374"
+    },
+    {
+        "id": "00374",
+        "target": "npc_vel",
+        "text": "Our role involves keeping a bird’s eye view on the entire operation... so.",
+        "next": "00375"
+    },
+    {
+        "id": "00375",
+        "target": "npc_vel",
+        "text": "What’s important is that it helps keep her mind calm, and therefore mine as well.",
+        "next": "00376"
+    },
+    {
+        "id": "00376",
+        "target": "npc_vel",
+        "text": "The moment she panics, I fear I’d likely follow soon.",
+         "responses": [
+            {
+                "text": "ACCEPT",
+                "next": "00386"
+            }
+        ],
+        "responseTarget": "player"
+    },
+    {
+        "id": "00378",
+        "target": "narrator",
+        "text": "You put on your best round-eyed pleading frown, staring a t the child to pull her deepest heartstrings.",
+        "next": "00379"
+    },
+    {
+        "id": "00379",
+        "target": "player",
+        "text": "P...please... could you please get down?",
+        "next": "00380"
+    },
+    {
+        "id": "00380",
+        "target": "npc_vel",
+        "text": "She’s asking why.",
+        "next": "00381"
+    },
+    {
+        "id": "00381",
+        "target": "player",
+        "text": "Or else I’ll die...",
+        "next": "00382"
+    },
+    {
+        "id": "00382",
+        "target": "narrator",
+        "text": "The closer she gets to the other end of the counter, you appear to lose more and more of your bearings on your mortality.",
+        "next": "00383"
+    },
+    {
+        "id": "00383",
+        "target": "narrator",
+        "text": "This terrifies her. She leaves the counter alone, landing back by his side.",
+        "next": "00384"
+    },
+    {
+        "id": "00384",
+        "target": "npc_vel",
+        "text": "Impressive.",
+        "next": "00385"
+    },
+    {
+        "id": "00385",
+        "target": "player",
+        "text": "I really am sorry we don’t have...",
+        "next": "00369"
+    },
+    {
+        "id": "00386",
+        "target": "player",
+        "text": "Alright! One Caw CAW-Fee coming up!",
+        "next": "00387"
+    },
+    {
+        "id": "00387",
+        "target": "npc_vel",
+        "text": "Caw caw.",
+        "next": "00388"
+    },
+    {
+        "id": "00388",
+        "target": "player",
+        "text": "Excuse me?",
+        "next": "00389"
+    },
+    {
+        "id": "00389",
+        "target": "npc_vel",
+        "text": "Oh. I thought you were fluent as well.",
+        "next": "00390"
+    },
+    {
+        "id": "00390",
+        "target": "player",
+        "text": "Okay... name and order please?",
+        "next": "00391"
+    },
+    {
+        "id": "00391",
+        "target": "npc_vel",
+        "text": "Vel, and I’m not ordering.",
+        "next": "00392"
+    },
+    {
+        "id": "00392",
+        "target": "player",
+        "text": "I believe I was talking to the customer.",
+        "next": "00393"
+    },
+    {
+        "id": "00393",
+        "target": "npc_vel",
+        "text": "Ah. That would make sense.",
+        "next": "00394"
+    },
+    {
+        "id": "00394",
+        "target": "npc_vel",
+        "text": "Carrie.",
+        "next": "00395"
+    },
+    {
+        "id": "00395",
+        "target": "npc_vel",
+        "text": "She would like to be gaslit into believing this is a corncake milkshake. Closest you can do is a matcha with black pearl sinkers and cubes of ice.",
+        "next": "00396"
+    },
+    {
+        "id": "00396",
+        "target": "npc_vel",
+        "text": "Don’t worry, Carrie. Yes, it’s the drink you wanted, just a different name.",
+        "next": "00397"
+    },
+    {
+        "id": "00397",
+        "target": "npc_vel",
+        "text": "It’s important she keeps calm and not be nervous during this quest. This could be fatal for us all.",
+        "final": true
+    },
+    {
+        "id": "00398",
+        "target": "npc_vel",
+        "text": "Don’t think too hard about it, Carrie. The corn here is just different.",
+        "outro": true
+    }
+]
+

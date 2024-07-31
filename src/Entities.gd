@@ -1,0 +1,1 @@
+class_name Entities extends Node2D

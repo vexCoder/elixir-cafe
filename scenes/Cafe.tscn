@@ -1,0 +1,231 @@
+[gd_scene load_steps=19 format=3 uid="uid://cldufehg3wsn3"]
+
+[ext_resource type="Script" path="res://src/Cafe.gd" id="1_6xkrv"]
+[ext_resource type="PackedScene" uid="uid://gljb1m51jp1j" path="res://scenes/Terminal.tscn" id="1_r5ulq"]
+[ext_resource type="PackedScene" uid="uid://dcmhp6q0fxd1y" path="res://scenes/NavigateCounterRight.tscn" id="2_8slf0"]
+[ext_resource type="PackedScene" uid="uid://226jdnw61syp" path="res://scenes/NavigateCounterLeft.tscn" id="2_vc2tw"]
+[ext_resource type="Texture2D" uid="uid://q8vskvju1c24" path="res://assets/cafe-bg.png" id="3_53wce"]
+[ext_resource type="Texture2D" uid="uid://b8nlcoykjlmrc" path="res://assets/cup-bg.png" id="5_et0od"]
+[ext_resource type="PackedScene" uid="uid://3x5ew4g07amb" path="res://scenes/PotionSlot.tscn" id="5_hvsad"]
+[ext_resource type="Texture2D" uid="uid://dicku7ivige38" path="res://assets/cup-fg.png" id="6_ws7xp"]
+[ext_resource type="FontFile" uid="uid://erouq5hqnn5p" path="res://assets/fonts/munro.ttf" id="7_32xe5"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="8_j5ux8"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="9_mlqvf"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="10_ck05y"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1lbb"]
+bg_color = Color(0.101961, 0.109804, 0.172549, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.407843, 0.211765, 0.407843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_muaty"]
+bg_color = Color(0.407843, 0.211765, 0.407843, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_color = Color(0.407843, 0.211765, 0.407843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o4g0x"]
+bg_color = Color(0.407843, 0.211765, 0.407843, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.407843, 0.211765, 0.407843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ks8op"]
+bg_color = Color(0.1394, 0.14297, 0.17, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.407843, 0.211765, 0.407843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k32xw"]
+
+[sub_resource type="Resource" id="Resource_jt1am"]
+script = ExtResource("10_ck05y")
+duration = 1.0
+transition = 0
+ease = 2
+
+[node name="Cafe" type="Node2D"]
+script = ExtResource("1_6xkrv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Terminal" parent="CanvasLayer" instance=ExtResource("1_r5ulq")]
+z_index = 1000
+
+[node name="NavigateCounterLeft" parent="CanvasLayer" instance=ExtResource("2_vc2tw")]
+offset_top = 196.0
+offset_bottom = 346.0
+
+[node name="NavigateCounterRight" parent="CanvasLayer" instance=ExtResource("2_8slf0")]
+visible = false
+z_index = 1
+offset_left = -20.0
+offset_top = 271.0
+offset_right = -20.0
+offset_bottom = 271.0
+
+[node name="Design" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Design"]
+position = Vector2(488, 328)
+scale = Vector2(0.641655, 0.641655)
+texture = ExtResource("3_53wce")
+
+[node name="CafeBottle" type="Node2D" parent="Design"]
+position = Vector2(352, 344)
+scale = Vector2(0.503798, 0.503798)
+
+[node name="BG" type="Sprite2D" parent="Design/CafeBottle"]
+texture = ExtResource("5_et0od")
+
+[node name="Extras" type="Node2D" parent="Design/CafeBottle"]
+
+[node name="FG" type="Sprite2D" parent="Design/CafeBottle"]
+texture = ExtResource("6_ws7xp")
+
+[node name="Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 752.0
+offset_right = 1152.0
+offset_bottom = 650.0
+mouse_filter = 2
+
+[node name="ColorRect2" type="ColorRect" parent="Menu"]
+layout_mode = 2
+offset_right = 400.0
+offset_bottom = 660.0
+mouse_filter = 2
+color = Color(0.101961, 0.109804, 0.172549, 1)
+
+[node name="Label" type="Label" parent="Menu"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 18.0
+offset_right = 85.0
+offset_bottom = 41.0
+text = "Toppings"
+
+[node name="ToppingsContainer" type="ScrollContainer" parent="Menu"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 48.0
+offset_right = 374.0
+offset_bottom = 128.0
+
+[node name="Toppings" type="HBoxContainer" parent="Menu/ToppingsContainer"]
+layout_mode = 2
+
+[node name="IceLabel" type="Label" parent="Menu"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 144.0
+offset_right = 85.0
+offset_bottom = 167.0
+text = "Sinkers"
+
+[node name="SinkersContainer" type="ScrollContainer" parent="Menu"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 176.0
+offset_right = 374.0
+offset_bottom = 256.0
+
+[node name="Sinkers" type="HBoxContainer" parent="Menu/SinkersContainer"]
+layout_mode = 2
+
+[node name="BaseLabel" type="Label" parent="Menu"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 272.0
+offset_right = 87.0
+offset_bottom = 295.0
+text = "Base"
+
+[node name="BaseContainer" type="ScrollContainer" parent="Menu"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 304.0
+offset_right = 376.0
+offset_bottom = 384.0
+
+[node name="Base" type="HBoxContainer" parent="Menu/BaseContainer"]
+layout_mode = 2
+
+[node name="CompleteButtonContainer" type="MarginContainer" parent="Menu"]
+layout_mode = 2
+offset_left = 7.0
+offset_top = 564.0
+offset_right = 387.0
+offset_bottom = 644.0
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="Button" type="Button" parent="Menu/CompleteButtonContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.407843, 0.211765, 0.407843, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.109804, 0.172549, 1)
+theme_override_colors/font_focus_color = Color(0.407843, 0.211765, 0.407843, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("7_32xe5")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1lbb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_muaty")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_o4g0x")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ks8op")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_k32xw")
+disabled = true
+text = "Complete Order"
+
+[node name="PotionSlot" parent="Menu" instance=ExtResource("5_hvsad")]
+layout_mode = 0
+offset_left = -80.0
+offset_top = 572.0
+offset_right = -10.0
+offset_bottom = 642.0
+
+[node name="Followed" type="Node2D" parent="."]
+position = Vector2(568, 328)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(568, 328)
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D"]
+script = ExtResource("8_j5ux8")
+
+[node name="PhantomCamera2D" type="Node2D" parent="."]
+position = Vector2(568, 328)
+script = ExtResource("9_mlqvf")
+follow_mode = 2
+snap_to_pixel = true
+tween_resource = SubResource("Resource_jt1am")
+tween_on_load = false
+draw_limits = true

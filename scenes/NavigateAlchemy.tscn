@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://xphcl0750fnm"]
+
+[ext_resource type="Script" path="res://src/components/Navigate.gd" id="1_x785x"]
+[ext_resource type="Texture2D" uid="uid://cqy7m5my0v48g" path="res://assets/navigation-box-alchemy-3.png" id="2_imh7l"]
+[ext_resource type="Script" path="res://src/components/Hoverable.gd" id="3_a12bt"]
+
+[node name="NavigateAlchemy" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 375.0
+offset_bottom = 150.0
+mouse_default_cursor_shape = 2
+
+[node name="Navigate" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_x785x")
+to_nav = 0
+
+[node name="Hoverable" type="Node" parent="."]
+script = ExtResource("3_a12bt")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -187.5
+offset_top = -75.0
+offset_right = 1357.5
+offset_bottom = 523.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.136, 0.136)
+texture = ExtResource("2_imh7l")

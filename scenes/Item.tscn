@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj8h8xfo20dv2"]
+
+[ext_resource type="Script" path="res://src/entities/Draggable.gd" id="1_24uo4"]
+[ext_resource type="Texture2D" uid="uid://tfltb4peywsp" path="res://icon.svg" id="1_nwetj"]
+[ext_resource type="Script" path="res://src/entities/Hoverable.gd" id="3_wl4s5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2nb8h"]
+size = Vector2(123, 124)
+
+[node name="Item" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2nb8h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_nwetj")
+
+[node name="Draggable" type="Node" parent="."]
+script = ExtResource("1_24uo4")
+
+[node name="Hoverable" type="Node" parent="."]
+script = ExtResource("3_wl4s5")

@@ -1,0 +1,92 @@
+[
+	{
+		"id": "00001",
+		"name": "Sleeping Potion",
+		"asset": "/assets/recipes/_awaken_ Carsen.png",
+		"sprite": "/cafe/potion Awaken_.png",
+		"description": "Ingredients:",
+		"position": {
+			"x": 0,
+			"y": 0
+		},
+		"combinations": [
+			[
+				"00005",
+				"00004",
+				"00006"
+			]
+		]
+	},
+	{
+		"id": "00002",
+		"name": "Hysteria",
+		"asset": "/assets/recipes/_Bonus Charisma_ Westley.png",
+		"sprite": "/cafe/potion bonus charisma_.png",
+		"description": "Ingredients:",
+		"position": {
+			"x": 0,
+			"y": 0
+		},
+		"combinations": [
+			[
+				"00001",
+				"00003",
+				"00002"
+			]
+		]
+	},
+	{
+		"id": "00003",
+		"name": "Discourage Giver",
+		"asset": "/assets/recipes/_Courage giver_ Apollo.png",
+		"sprite": "/cafe/potion courage giver.png",
+		"description": "Ingredients:",
+		"position": {
+			"x": 0,
+			"y": 0
+		},
+		"combinations": [
+			[
+				"00007",
+				"00008",
+				"00009"
+			]
+		]
+	},
+	{
+		"id": "00004",
+		"name": "Hocus no Focus",
+		"asset": "/assets/recipes/_Hocus Focus_ Buttercup.png",
+		"sprite": "/cafe/potion Hocus focus.png",
+		"description": "Ingredients:",
+		"position": {
+			"x": 0,
+			"y": 0
+		},
+		"combinations": [
+			[
+				"00009",
+				"00007",
+				"00005"
+			]
+		]
+	},
+	{
+		"id": "00005",
+		"name": "Brain Empty",
+		"asset": "/assets/recipes/_thought enhancers_ Vel.png",
+		"sprite": "/cafe/potion thought enhancers_.png",
+		"description": "Ingredients:",
+		"position": {
+			"x": 0,
+			"y": 0
+		},
+		"combinations": [
+			[
+				"00005",
+				"00002",
+				"00001"
+			]
+		]
+	}
+]

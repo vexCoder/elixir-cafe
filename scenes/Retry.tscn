@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://cr4symv8al6sd"]
+
+[ext_resource type="Script" path="res://src/components/Hoverable.gd" id="2_inilk"]
+[ext_resource type="Texture2D" uid="uid://bd43gic1stjba" path="res://assets/retry-box.png" id="4_1k86r"]
+
+[node name="Retry" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = -366.0
+offset_bottom = -243.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+
+[node name="Hoverable" type="Node" parent="."]
+script = ExtResource("2_inilk")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -105.0
+offset_top = -40.5
+offset_right = 1440.0
+offset_bottom = 557.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.136, 0.136)
+texture = ExtResource("4_1k86r")

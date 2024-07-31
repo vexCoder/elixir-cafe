@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ewy2ov3fjj8k"]
+
+[ext_resource type="Script" path="res://src/common/Navigation.gd" id="1_p1xqk"]
+[ext_resource type="Shader" path="res://src/shaders/diamond_transition.gdshader" id="2_pc273"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_evxk5"]
+shader = ExtResource("2_pc273")
+shader_parameter/progress = 0.0
+shader_parameter/diamondPixelSize = 15.0
+
+[node name="Navigation" type="CanvasLayer"]
+script = ExtResource("1_p1xqk")
+
+[node name="Transition" type="ColorRect" parent="."]
+z_index = 1
+material = SubResource("ShaderMaterial_evxk5")
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+color = Color(0.101961, 0.109804, 0.172549, 1)

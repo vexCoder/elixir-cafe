@@ -1,0 +1,65 @@
+[
+	{
+		"id": "00001",
+		"name": "Mushroom",
+		"asset": "/assets/ingredients/mushroom.png",
+		"description": "A deadly looking mushroom",
+		"color": "#FF0000"
+	},
+	{
+		"id": "00002",
+		"name": "Brainrot",
+		"asset": "/assets/ingredients/brainrot.png",
+		"description": "Microorganisms are swimming around, handle with care",
+		"color": "#8B9A82"
+	},
+	{
+		"id": "00003",
+		"name": "Cosmos Stardust",
+		"asset": "/assets/ingredients/cosmos_ stardust_.png",
+		"description": "Dust from a space visitor, hard to get rid of",
+		"color": "#FFDFFE"
+	},
+	{
+		"id": "00004",
+		"name": "Eater of Worlds",
+		"asset": "/assets/ingredients/eater of worlds.png",
+		"description": "Cleaner of stains",
+		"color": "#EDEFF1"
+	},
+	{
+		"id": "00005",
+		"name": "Ethereal Essence",
+		"asset": "/assets/ingredients/ethereal essence.png",
+		"description": "Painfully heals any wounds",
+		"color": "#E6EFFD"
+	},
+	{
+		"id": "00006",
+		"name": "Nightlight",
+		"asset": "/assets/ingredients/nightlight.png",
+		"description": "Herbs you find on the highest peak on a nightime",
+		"color": "#67B342"
+	},
+	{
+		"id": "00007",
+		"name": "Ooze of Life",
+		"asset": "/assets/ingredients/ooze of life.png",
+		"description": "One sip and you'll be rejuvenated",
+		"color": "#9FFF27"
+	},
+	{
+		"id": "00008",
+		"name": "Storm in a Bottle",
+		"asset": "/assets/ingredients/storm in a bottle.png",
+		"description": "Contains the power of a Category 5 hurricane, please handle with care",
+		"color": "#FDCB34"
+	},
+	{
+		"id": "00009",
+		"name": "Sucre",
+		"asset": "/assets/ingredients/sucre.png",
+		"description": "So sweeeet",
+		"color": "#F6ECF6"
+	}
+]

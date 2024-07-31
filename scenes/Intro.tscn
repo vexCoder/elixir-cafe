@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=3 uid="uid://42xuuj3evkov"]
+
+[ext_resource type="Script" path="res://src/Intro.gd" id="1_3b72s"]
+[ext_resource type="Texture2D" uid="uid://clgun2v1q0oyt" path="res://assets/intro/1.png" id="1_dhgyc"]
+[ext_resource type="Texture2D" uid="uid://b5ad8ingkvib" path="res://assets/intro/2.png" id="2_56odr"]
+[ext_resource type="Texture2D" uid="uid://btdrccx8gnnq6" path="res://assets/intro/3.png" id="3_rxuic"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="3_xsswt"]
+[ext_resource type="Texture2D" uid="uid://dblndcw2l61mc" path="res://assets/intro/4.png" id="4_70rsg"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="4_e2f3d"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="5_jdflb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4qf7f"]
+
+[sub_resource type="Resource" id="Resource_d38a2"]
+script = ExtResource("5_jdflb")
+duration = 1.0
+transition = 0
+ease = 2
+
+[node name="Intro" type="Node2D"]
+material = SubResource("ShaderMaterial_4qf7f")
+script = ExtResource("1_3b72s")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="4" type="Sprite2D" parent="."]
+position = Vector2(570, 327)
+scale = Vector2(0.611751, 0.611751)
+texture = ExtResource("4_70rsg")
+
+[node name="3" type="Sprite2D" parent="."]
+position = Vector2(566, 328)
+scale = Vector2(0.612404, 0.612404)
+texture = ExtResource("3_rxuic")
+
+[node name="2" type="Sprite2D" parent="."]
+position = Vector2(568, 327)
+scale = Vector2(0.600249, 0.600249)
+texture = ExtResource("2_56odr")
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(575, 327)
+scale = Vector2(0.610749, 0.610749)
+texture = ExtResource("1_dhgyc")
+
+[node name="Followed" type="Node2D" parent="."]
+position = Vector2(568, 328)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(568, 328)
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D"]
+script = ExtResource("3_xsswt")
+
+[node name="PhantomCamera2D" type="Node2D" parent="." node_paths=PackedStringArray("follow_target")]
+position = Vector2(568, 328)
+script = ExtResource("4_e2f3d")
+follow_mode = 2
+follow_target = NodePath("../Followed")
+snap_to_pixel = true
+tween_resource = SubResource("Resource_d38a2")
+tween_on_load = false
+draw_limits = true
+
+[node name="Node2D" type="Node2D" parent="."]

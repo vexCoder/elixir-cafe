@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwsbsec5rutex"]
+
+[ext_resource type="Script" path="res://src/Textbox.gd" id="1_fe7yb"]
+[ext_resource type="Texture2D" uid="uid://bwh6usaq1exj2" path="res://assets/textbox-target.png" id="3_q40r8"]
+
+[node name="Textbox" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_fe7yb")
+metadata/_edit_use_anchors_ = true
+
+[node name="Container" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 12
+
+[node name="MessageContainer" type="BoxContainer" parent="Container"]
+layout_mode = 2
+theme_override_constants/separation = -6
+vertical = true
+
+[node name="PointerContainer" type="MarginContainer" parent="Container/MessageContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_right = 4
+
+[node name="PointerContainerBox" type="HBoxContainer" parent="Container/MessageContainer/PointerContainer"]
+layout_mode = 2
+alignment = 2
+
+[node name="Pointer" type="TextureRect" parent="Container/MessageContainer/PointerContainer/PointerContainerBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_q40r8")
+
+[node name="ChoicesContainer" type="VBoxContainer" parent="Container"]
+layout_mode = 2
+theme_override_constants/separation = 12

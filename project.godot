@@ -1,0 +1,40 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Elixir-cafe"
+run/main_scene="res://scenes/Menu.tscn"
+config/features=PackedStringArray("4.2", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Logger="*res://src/common/Logger.gd"
+Global="*res://src/common/Global.gd"
+PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
+Resources="*res://src/common/Resources.gd"
+Navigation="*res://scenes/Navigation.tscn"
+Data="*res://src/common/Data.gd"
+Music="*res://scenes/Music.tscn"
+Asset="*res://src/common/Asset.gd"
+
+[display]
+
+window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/phantom_camera/plugin.cfg")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

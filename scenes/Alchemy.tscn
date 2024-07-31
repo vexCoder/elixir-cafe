@@ -1,0 +1,344 @@
+[gd_scene load_steps=25 format=3 uid="uid://c2lbaxtdnyw4m"]
+
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="3_1fphf"]
+[ext_resource type="PackedScene" uid="uid://dcmhp6q0fxd1y" path="res://scenes/NavigateCounterRight.tscn" id="3_66iuh"]
+[ext_resource type="PackedScene" uid="uid://3x5ew4g07amb" path="res://scenes/PotionSlot.tscn" id="3_dd527"]
+[ext_resource type="PackedScene" uid="uid://gljb1m51jp1j" path="res://scenes/Terminal.tscn" id="3_eamcw"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_2d.gd" id="4_cxnod"]
+[ext_resource type="Script" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="5_rpdxn"]
+[ext_resource type="Texture2D" uid="uid://dgb0lyhmv2vau" path="res://assets/alchemy-bg.png" id="6_5wjxw"]
+[ext_resource type="Shader" path="res://src/shaders/water.gdshader" id="7_px3e6"]
+[ext_resource type="Texture2D" uid="uid://deasekt8yjd5o" path="res://assets/boiling.png" id="8_sr50t"]
+[ext_resource type="PackedScene" uid="uid://bbhdp1mfnwnjr" path="res://scenes/Ladle.tscn" id="10_11va6"]
+[ext_resource type="FontFile" uid="uid://erouq5hqnn5p" path="res://assets/fonts/munro.ttf" id="12_07bew"]
+[ext_resource type="Script" path="res://src/AlchemyMenu.gd" id="12_yyjnk"]
+
+[sub_resource type="Resource" id="Resource_4fimg"]
+script = ExtResource("5_rpdxn")
+duration = 1.0
+transition = 0
+ease = 2
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b07wh"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_yao72"]
+noise_type = 3
+frequency = 0.0227
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_l8luu"]
+width = 300
+height = 300
+seamless = true
+noise = SubResource("FastNoiseLite_yao72")
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_372mm"]
+noise_type = 3
+frequency = 0.014
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_nfk44"]
+seamless = true
+noise = SubResource("FastNoiseLite_372mm")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y62mn"]
+shader = ExtResource("7_px3e6")
+shader_parameter/scroll1 = Vector2(0.05, 0.05)
+shader_parameter/scroll2 = Vector2(-0.05, -0.05)
+shader_parameter/distortion_strength = 0.2
+shader_parameter/tone_color = Color(0.77, 0.2618, 0.77, 1)
+shader_parameter/top_color = Color(0.33575, 0.289907, 0.711684, 1)
+shader_parameter/light_start = 0.275
+shader_parameter/light_end = 0.5
+shader_parameter/noise1 = SubResource("NoiseTexture2D_l8luu")
+shader_parameter/noise2 = SubResource("NoiseTexture2D_nfk44")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2wk05"]
+bg_color = Color(0.101961, 0.109804, 0.172549, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.407843, 0.211765, 0.407843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8tkuc"]
+bg_color = Color(0.407843, 0.211765, 0.407843, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_color = Color(0.407843, 0.211765, 0.407843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rr04r"]
+bg_color = Color(0.407843, 0.211765, 0.407843, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.407843, 0.211765, 0.407843, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uwls6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iqh5h"]
+bg_color = Color(0.101961, 0.109804, 0.172549, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Alchemy" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Terminal" parent="CanvasLayer" instance=ExtResource("3_eamcw")]
+z_index = 1000
+
+[node name="NavigateCounterRight" parent="CanvasLayer" instance=ExtResource("3_66iuh")]
+z_index = 1
+offset_left = -20.0
+offset_top = 271.0
+offset_right = -20.0
+offset_bottom = 271.0
+
+[node name="Followed" type="Node2D" parent="."]
+position = Vector2(568, 328)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(568, 328)
+
+[node name="PhantomCameraHost" type="Node" parent="Camera2D"]
+script = ExtResource("3_1fphf")
+
+[node name="PhantomCamera2D" type="Node2D" parent="." node_paths=PackedStringArray("follow_target")]
+position = Vector2(568, 328)
+script = ExtResource("4_cxnod")
+follow_mode = 2
+follow_target = NodePath("../Followed")
+snap_to_pixel = true
+tween_resource = SubResource("Resource_4fimg")
+tween_on_load = false
+draw_limits = true
+
+[node name="Design" type="Node2D" parent="."]
+material = SubResource("ShaderMaterial_b07wh")
+position = Vector2(384, -8)
+
+[node name="Bg" type="Sprite2D" parent="Design"]
+use_parent_material = true
+position = Vector2(568, 336)
+scale = Vector2(0.625507, 0.625507)
+texture = ExtResource("6_5wjxw")
+
+[node name="Ladle" parent="Design" instance=ExtResource("10_11va6")]
+position = Vector2(576, 384)
+
+[node name="ColorRect" type="ColorRect" parent="Design"]
+z_index = -1
+material = SubResource("ShaderMaterial_y62mn")
+offset_left = 285.0
+offset_top = 55.0
+offset_right = 325.0
+offset_bottom = 95.0
+scale = Vector2(14.9057, 14.9057)
+
+[node name="Water" type="Sprite2D" parent="Design"]
+z_index = -2
+use_parent_material = true
+position = Vector2(576, 384)
+scale = Vector2(1.05401, 0.622877)
+texture = ExtResource("8_sr50t")
+
+[node name="Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -8.0
+offset_right = 392.0
+offset_bottom = 650.0
+mouse_filter = 2
+script = ExtResource("12_yyjnk")
+
+[node name="PotionSlot" parent="Menu" instance=ExtResource("3_dd527")]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 572.0
+offset_right = 494.0
+offset_bottom = 642.0
+
+[node name="ColorRect2" type="ColorRect" parent="Menu"]
+layout_mode = 2
+offset_right = 400.0
+offset_bottom = 660.0
+mouse_filter = 2
+color = Color(0.101961, 0.109804, 0.172549, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+offset_top = 3.0
+offset_right = 400.0
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 4
+
+[node name="Button" type="Button" parent="Menu/HBoxContainer/MarginContainer"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.407843, 0.211765, 0.407843, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.109804, 0.172549, 1)
+theme_override_colors/font_focus_color = Color(0.407843, 0.211765, 0.407843, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("12_07bew")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_2wk05")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8tkuc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rr04r")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uwls6")
+text = "Ingredients"
+
+[node name="MarginContainer2" type="MarginContainer" parent="Menu/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="Button" type="Button" parent="Menu/HBoxContainer/MarginContainer2"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.407843, 0.211765, 0.407843, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.109804, 0.172549, 1)
+theme_override_colors/font_focus_color = Color(0.407843, 0.211765, 0.407843, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("12_07bew")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_2wk05")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8tkuc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rr04r")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uwls6")
+text = "Recipe"
+
+[node name="RecipeContainer" type="MarginContainer" parent="Menu"]
+layout_mode = 2
+offset_top = 88.0
+offset_right = 400.0
+offset_bottom = 648.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/RecipeContainer"]
+z_index = 100
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="HFlowContainer" type="HFlowContainer" parent="Menu/RecipeContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+
+[node name="IngredientContainer" type="MarginContainer" parent="Menu"]
+layout_mode = 0
+offset_top = 88.0
+offset_right = 400.0
+offset_bottom = 488.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/IngredientContainer"]
+z_index = 100
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="HFlowContainer" type="HFlowContainer" parent="Menu/IngredientContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+
+[node name="ActiveIngredientsContainer" type="MarginContainer" parent="Menu"]
+layout_mode = 0
+offset_top = 472.0
+offset_right = 400.0
+offset_bottom = 568.0
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+
+[node name="PanelContainer" type="PanelContainer" parent="Menu/ActiveIngredientsContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_iqh5h")
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu/ActiveIngredientsContainer"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 8
+
+[node name="Label" type="Label" parent="Menu/ActiveIngredientsContainer/MarginContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3713, 0.382815, 0.47, 1)
+theme_override_fonts/font = ExtResource("12_07bew")
+theme_override_font_sizes/font_size = 22
+text = "Active Ingredients"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Menu/ActiveIngredientsContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu/ActiveIngredientsContainer/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Menu/ActiveIngredientsContainer/ScrollContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="Menu"]
+layout_mode = 2
+offset_top = 570.0
+offset_right = 400.0
+offset_bottom = 650.0
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 4
+
+[node name="Button" type="Button" parent="Menu/MarginContainer2"]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(0.407843, 0.211765, 0.407843, 1)
+theme_override_colors/font_hover_color = Color(0.101961, 0.109804, 0.172549, 1)
+theme_override_colors/font_focus_color = Color(0.407843, 0.211765, 0.407843, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("12_07bew")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_2wk05")
+theme_override_styles/hover = SubResource("StyleBoxFlat_8tkuc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rr04r")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uwls6")
+text = "Mix"

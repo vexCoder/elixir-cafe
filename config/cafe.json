@@ -1,0 +1,90 @@
+[
+	{
+		"id": "00001",
+		"name": "Caramel Drizzle",
+		"layer": "toppings",
+		"icon": "/cafe/caramel-drizzle.png",
+		"sprite": "/cafe/caramel drizzle 1.png",
+		"position": {
+			"x": 0,
+			"y": 0
+		}
+	},
+	{
+		"id": "00002",
+		"name": "Ice",
+		"layer": "sinkers",
+		"icon": "/cafe/ice.png",
+		"sprite": "/cafe/ice-drink.png",
+		"position": {
+			"x": 0,
+			"y": 0
+		}
+	},
+	{
+		"id": "00003",
+		"name": "Matcha",
+		"layer": "base",
+		"icon": "/cafe/matcha icon.png",
+		"sprite": "/cafe/matcha-drink.png",
+		"position": {
+			"x": 0,
+			"y": 0
+		}
+	},
+	{
+		"id": "00004",
+		"name": "Coffee",
+		"layer": "base",
+		"icon": "/cafe/coffee icon.png",
+		"sprite": "/cafe/coffee-drink.png",
+		"position": {
+			"x": 0,
+			"y": 0
+		}
+	},
+	{
+		"id": "00005",
+		"name": "Boba",
+		"layer": "sinkers",
+		"icon": "/cafe/boba.png",
+		"sprite": "/cafe/c boba.png",
+		"position": {
+			"x": 0,
+			"y": -80
+		}
+	},
+	{
+		"id": "00006",
+		"name": "Cherry",
+		"layer": "toppings",
+		"icon": "/cafe/cherry_1.png",
+		"sprite": "/cafe/cherry.png",
+		"position": {
+			"x": 0,
+			"y": 0
+		}
+	},
+	{
+		"id": "00007",
+		"name": "Choco Flakes",
+		"layer": "toppings",
+		"icon": "/cafe/choco flakes_1.png",
+		"sprite": "/cafe/choco flakes.png",
+		"position": {
+			"x": 0,
+			"y": 0
+		}
+	},
+	{
+		"id": "00008",
+		"name": "Sprinkles",
+		"layer": "toppings",
+		"icon": "/cafe/sprinkles.png",
+		"sprite": "/cafe/c sprinkles.png",
+		"position": {
+			"x": 0,
+			"y": 0
+		}
+	}
+]
